@@ -1,0 +1,18 @@
+.grs-select_container {
+  &::before {
+    border-bottom: 5px solid darken(#e5e7ee, 20%);
+  }
+  &::after {
+    border-top: 5px solid darken(#e5e7ee, 20%);
+  }
+}
+.grs-select {
+  border: 1px solid #e5e7ee;
+  padding: 0.5rem;
+  border-radius: 0.35rem;
+  line-height: 1.25rem;
+  min-height: 1.25rem;
+  font-size: 13px;
+  font-weight: 600;
+  height: calc(2.25rem + (1px * 2));
+}

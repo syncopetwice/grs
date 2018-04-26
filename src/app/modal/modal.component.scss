@@ -1,0 +1,40 @@
+.grs-modal {}
+
+.grs-modal__container {
+    border-radius: 0.3rem;
+    padding: 1rem 0;
+}
+
+.grs-modal__inner-container {
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 0.3rem 0.2rem 0.2rem 0.3rem;
+}
+
+.grs-modal__header {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #DFE3E9;
+    border-top-right-radius: 0.3rem;
+    border-top-left-radius: 0.3rem;
+}
+
+.grs-modal__heading {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: lighten(#3e3e3c, 10%);
+}
+
+.grs-modal__content {}
+
+.grs-modal__footer {
+    padding: 0.5rem 1rem;
+    background-color: #F7F8F9;
+    box-shadow: none;
+    border: none;
+    border-bottom-right-radius: 0.2rem;
+    border-bottom-left-radius: 0.2rem;
+}
+
+.grs-backdrop {
+    background-color: rgba(0, 0, 0, 0.25);
+}

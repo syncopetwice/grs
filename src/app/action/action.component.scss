@@ -1,0 +1,56 @@
+.grs-action {
+    text-transform: uppercase;
+    font-size: 12px;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: #9493a9;
+    vertical-align: middle;
+    transition: background-color 0.15s linear;
+    &:hover,
+    &:focus {
+        background-color: #F0F3F5;
+        color: #9493a9;
+    }
+    &:focus {
+        box-shadow: 0 0 2px darken(#F0F3F5, 2%);
+    }
+    &:active {
+        background-color: darken(#F0F3F5, 2%);
+    }
+    &[disabled] {
+        background: transparent;
+        color: lighten(#9493a9, 2%);
+        opacity: 0.45;
+    }
+}
+
+.grs-action_brand {
+    border: none;
+    color: #fff;
+    background: rgb(55, 231, 197);
+    background: -moz-linear-gradient(top, rgba(55, 231, 197, 1) 0%, rgba(0, 215, 239, 1) 100%);
+    background: -webkit-linear-gradient(top, rgba(55, 231, 197, 1) 0%, rgba(0, 215, 239, 1) 100%);
+    background: linear-gradient(to bottom, rgba(55, 231, 197, 1) 0%, rgba(0, 215, 239, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#37e7c5', endColorstr='#00d7ef', GradientType=0);
+    &:hover,
+    &:focus {
+        color: #fff;
+        background-color: darken(rgb(55, 231, 197), 2%);
+    }
+    &:focus {
+        box-shadow: 0 0 2px lighten(rgb(55, 231, 197), 10%);
+    }
+    &:active {
+        background-color: darken(rgb(55, 231, 197), 4%);
+        border-color: none;
+    }
+    &[disabled] {
+        background: #dce4e9;
+        box-shadow: none;
+        border-color: none;
+        color: darken(#e2e0eb, 10%);
+    }
+}
+
+.grs-action_neutral {}

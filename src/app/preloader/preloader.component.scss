@@ -1,0 +1,39 @@
+.preloader {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  margin: 50px auto;
+}
+
+.preloader__bounce-1 {
+  border: 1px solid darken(#37e7c5, 7%);
+}
+.preloader__bounce-2 {
+  border: 1px solid darken(#37e7c5, 5%);
+}
+
+.preloader__bounce-1,
+.preloader__bounce-2 {
+  box-shadow: inset 0 0 5px rgba(255,255,255,0.5);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #37e7c5;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.preloader__bounce-2 {
+  animation-delay: -1.0s;
+}
+
+@keyframes sk-bounce {
+  0%, 100% {
+    transform: scale(0.1);
+  } 50% {
+    transform: scale(1.0);
+  }
+}

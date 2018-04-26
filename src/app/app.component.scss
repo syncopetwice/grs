@@ -1,0 +1,21 @@
+.grs {
+  font-family: 'Lato', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f7f9f9;
+  min-height: 100vh;
+  min-width: 100vw;
+  padding: 24px;
+  border-radius: 0.125rem;
+}
+
+.grs-container {
+  padding: 24px;
+  background-color: #fff;
+}
+
+.grs-form-element__label {
+  color: darken(#9ba4a9, 20%);
+  font-weight: 300;
+  font-size: 0.85rem;
+}

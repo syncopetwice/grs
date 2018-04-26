@@ -1,0 +1,125 @@
+.slds-radio {
+    display: inline-block;
+}
+
+.slds-radio .slds-radio_faux,
+.slds-radio .slds-radio--faux {
+    width: 1.15rem;
+    height: 1.15rem;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    border: 1px solid #e2e0eb;
+    border-radius: 50%;
+    background: white;
+    transition: border 0.1s linear, background-color 0.1s linear;
+}
+
+.slds-radio .slds-form-element__label {
+    display: inline;
+    vertical-align: middle;
+    font-size: 0.8125rem;
+}
+
+.slds-radio [type="radio"] {
+    width: 1px;
+    height: 1px;
+    border: 0;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
+.slds-radio [type="radio"]:checked+.slds-radio_faux,
+.slds-radio [type="radio"]:checked+.slds-radio--faux,
+.slds-radio [type="radio"]:checked~.slds-radio_faux,
+.slds-radio [type="radio"]:checked~.slds-radio--faux,
+.slds-radio [type="radio"]:checked+.slds-radio__label .slds-radio_faux,
+.slds-radio [type="radio"]:checked+.slds-radio__label .slds-radio--faux {
+    background: white;
+}
+
+.slds-radio [type="radio"]:checked+.slds-radio_faux:after,
+.slds-radio [type="radio"]:checked+.slds-radio--faux:after,
+.slds-radio [type="radio"]:checked~.slds-radio_faux:after,
+.slds-radio [type="radio"]:checked~.slds-radio--faux:after,
+.slds-radio [type="radio"]:checked+.slds-radio__label .slds-radio_faux:after,
+.slds-radio [type="radio"]:checked+.slds-radio__label .slds-radio--faux:after {
+    content: '';
+    width: 0.75rem;
+    height: 0.75rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    border-radius: 50%;
+    background: rgb(55, 231, 197);
+    background: -moz-linear-gradient(top, rgba(55, 231, 197, 1) 0%, rgba(0, 215, 239, 1) 100%);
+    background: -webkit-linear-gradient(top, rgba(55, 231, 197, 1) 0%, rgba(0, 215, 239, 1) 100%);
+    background: linear-gradient(to bottom, rgba(55, 231, 197, 1) 0%, rgba(0, 215, 239, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#37e7c5', endColorstr='#00d7ef', GradientType=0);
+}
+
+.slds-radio [type="radio"]:focus+.slds-radio_faux,
+.slds-radio [type="radio"]:focus+.slds-radio--faux,
+.slds-radio [type="radio"]:focus~.slds-radio_faux,
+.slds-radio [type="radio"]:focus~.slds-radio--faux,
+.slds-radio [type="radio"]:focus+.slds-radio__label .slds-radio_faux,
+.slds-radio [type="radio"]:focus+.slds-radio__label .slds-radio--faux {
+    border-color: #1589ee;
+    box-shadow: 0 0 3px #0070D2;
+}
+
+.slds-radio [type="radio"][disabled] {
+    cursor: not-allowed;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.slds-radio [type="radio"][disabled]~.slds-radio_faux,
+.slds-radio [type="radio"][disabled]~.slds-radio--faux,
+.slds-radio [type="radio"][disabled]+.slds-radio__label .slds-radio_faux,
+.slds-radio [type="radio"][disabled]+.slds-radio__label .slds-radio--faux {
+    background-color: #fff;
+    opacity: 0.45;
+}
+
+.slds-has-error .slds-radio [type='radio']+.slds-radio_faux,
+.slds-has-error .slds-radio [type='radio']+.slds-radio--faux,
+.slds-has-error .slds-radio [type='radio']~.slds-radio_faux,
+.slds-has-error .slds-radio [type='radio']~.slds-radio--faux,
+.slds-has-error .slds-radio [type='radio']+.slds-radio__label .slds-radio_faux,
+.slds-has-error .slds-radio [type='radio']+.slds-radio__label .slds-radio--faux {
+    border-color: #c23934;
+}
+
+.slds-has-error .slds-radio [type='radio']:checked+.slds-radio_faux,
+.slds-has-error .slds-radio [type='radio']:checked+.slds-radio--faux,
+.slds-has-error .slds-radio [type='radio']:checked~.slds-radio_faux,
+.slds-has-error .slds-radio [type='radio']:checked~.slds-radio--faux,
+.slds-has-error .slds-radio [type='radio']:checked+.slds-radio__label .slds-radio_faux,
+.slds-has-error .slds-radio [type='radio']:checked+.slds-radio__label .slds-radio--faux {
+    background: white;
+}
+
+.slds-has-error .slds-radio [type='radio']:checked+.slds-radio_faux:after,
+.slds-has-error .slds-radio [type='radio']:checked+.slds-radio--faux:after,
+.slds-has-error .slds-radio [type='radio']:checked~.slds-radio_faux:after,
+.slds-has-error .slds-radio [type='radio']:checked~.slds-radio--faux:after,
+.slds-has-error .slds-radio [type='radio']:checked+.slds-radio__label .slds-radio_faux:after,
+.slds-has-error .slds-radio [type='radio']:checked+.slds-radio__label .slds-radio--faux:after {
+    background: #d4504c;
+}
+
+.slds-form-element .slds-radio [type='radio']+.slds-radio_faux,
+.slds-form-element .slds-radio [type='radio']+.slds-radio--faux,
+.slds-form-element .slds-radio [type='radio']~.slds-radio_faux,
+.slds-form-element .slds-radio [type='radio']~.slds-radio--faux,
+.slds-radio [type='radio']+.slds-radio__label .slds-radio_faux,
+.slds-radio [type='radio']+.slds-radio__label .slds-radio--faux {
+    margin-right: 0.25rem;
+}
