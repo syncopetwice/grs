@@ -15,6 +15,9 @@ import { TableComponent } from './table/table.component';
 import { RadioComponent } from './radio/radio.component';
 import { ModalComponent } from './modal/modal.component';
 import { SelectComponent } from './select/select.component';
+import { IconActionComponent } from './icon-action/icon-action.component';
+import { UploaderComponent } from './uploader/uploader.component';
+import { IconComponent } from './icon/icon.component';
 
 
 @NgModule({
@@ -30,7 +33,10 @@ import { SelectComponent } from './select/select.component';
     TableComponent,
     RadioComponent,
     ModalComponent,
-    SelectComponent
+    SelectComponent,
+    IconActionComponent,
+    UploaderComponent,
+    IconComponent
   ],
   imports: [
     BrowserModule,

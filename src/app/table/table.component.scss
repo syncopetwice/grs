@@ -1,0 +1,22 @@
+.grs-table {
+  .grs-table__thead {
+    .grs-table__th {
+      padding: 0.5rem;
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #AAB2C0;
+      background-color: transparent;
+    }
+  }
+  .grs-table__tbody {
+    .grs-table__tr {
+      border-top: 1px solid #E8E9EA;
+    }
+    .grs-table__td {
+      font-size: 14px;
+      color: #002257;
+      padding: 0.5rem;
+    }
+  }
+
+}
