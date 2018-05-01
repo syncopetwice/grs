@@ -5,3 +5,52 @@
 .grs-lookup {
   border: none;
 }
+
+.grs-lookup__dropdown {
+  border: none;
+  border-radius: 0.125rem;
+  padding: 0.125rem 0;
+  max-width: calc(100% - 2px);
+
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+
+  .grs-lookup__option {
+    padding-top: 0.125rem;
+    padding-bottom: 0.125rem;
+
+    &:hover,
+    &:focus {
+      background-color: #f6f6f6;
+    }
+
+  }
+
+}
+
+
+.grs-lookup__selected {
+  padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    line-height: 1.25rem;
+    min-height: 1.25rem;
+    color: #49474c;
+    background-color: #f5f7f7;
+}
+
+.grs-lookup__selected-item {
+  border: 1px solid #ff003b;
+  color: #ff003b;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 0.125rem;
+  padding: 0.125rem 0.5rem;
+}
+
+.grs-lookup__selected-close-icon {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #ff003b;
+  cursor: pointer;
+}

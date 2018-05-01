@@ -1,8 +1,3 @@
-<button (click)="isEditMode = !isEditMode" class="slds-m-bottom_small slds-button slds-button_neutral">
-  <span *ngIf="!isEditMode">Edit Mode</span>
-  <span *ngIf="isEditMode">View Mode</span>
-</button>
-
 <div class="slds-grid slds-gutters slds-p-horizontal_x-small">
   <div class="slds-col slds-size_1-of-3 slds-p-around_x-small tab-details_col">
 
@@ -11,30 +6,30 @@
       <div class="slds-form-element">
         <label class="slds-form-element__label">Transaction Number</label>
         <div class="slds-form-element__control">
-          <div *ngIf="!isEditMode" class="slds-form-element__static">
+          <div *ngIf="!TS.isEditMode" class="slds-form-element__static">
             John Williams
           </div>
-          <grs-input *ngIf="isEditMode"></grs-input>
+          <grs-input *ngIf="TS.isEditMode"></grs-input>
         </div>
       </div>
 
       <div class="slds-form-element">
         <label class="slds-form-element__label">Client</label>
         <div class="slds-form-element__control">
-          <div *ngIf="!isEditMode" class="slds-form-element__static">
+          <div *ngIf="!TS.isEditMode" class="slds-form-element__static">
             Anthony Dawson
           </div>
-          <grs-input *ngIf="isEditMode"></grs-input>
+          <grs-input *ngIf="TS.isEditMode"></grs-input>
         </div>
       </div>
 
       <div class="slds-form-element">
         <label class="slds-form-element__label">POC</label>
         <div class="slds-form-element__control">
-          <div *ngIf="!isEditMode" class="slds-form-element__static">
+          <div *ngIf="!TS.isEditMode" class="slds-form-element__static">
             John Williams
           </div>
-          <grs-input *ngIf="isEditMode"></grs-input>
+          <grs-input *ngIf="TS.isEditMode"></grs-input>
         </div>
       </div>
 
@@ -54,10 +49,10 @@
       <div class="slds-form-element">
         <label class="slds-form-element__label">Deposit</label>
         <div class="slds-form-element__control">
-          <div *ngIf="!isEditMode" class="slds-form-element__static">
+          <div *ngIf="!TS.isEditMode" class="slds-form-element__static">
             50%
           </div>
-          <grs-input *ngIf="isEditMode"></grs-input>
+          <grs-input *ngIf="TS.isEditMode"></grs-input>
         </div>
       </div>
 
@@ -75,12 +70,69 @@
       <div class="slds-form-element">
         <label class="slds-form-element__label">User Account</label>
         <div class="slds-form-element__control">
-          <div *ngIf="!isEditMode" class="slds-form-element__static">
-            Alex Turner
-          </div>
-          <grs-lookup></grs-lookup>
+          <grs-lookup (itemSelect)="onItemSelect()"></grs-lookup>
         </div>
       </div>
+
+      <div class="slds-form-element">
+        <label class="slds-form-element__label">State</label>
+        <div class="slds-form-element__control">
+          <grs-select></grs-select>
+        </div>
+      </div>
+
+      <div class="slds-form-element">
+        <label class="slds-form-element__label">Supplier</label>
+        <div class="slds-form-element__control">
+          <grs-action type="brand" (click)="isSetSupplierModalOpen = !isSetSupplierModalOpen">
+            Set Supplier
+          </grs-action>
+          <grs-modal [open]="isSetSupplierModalOpen">
+            <div class="slds-form slds-form_stacked">
+              <div class="slds-form-element">
+                <label class="slds-form-element__label grs-form-element__label">Account</label>
+                <div class="slds-form-element__control">
+                  <grs-input></grs-input>
+                </div>
+              </div>
+              <div class="slds-form-element">
+                <label class="slds-form-element__label grs-form-element__label" for="input-id-02">Description</label>
+                <div class="slds-form-element__control">
+                  <grs-textarea></grs-textarea>
+                </div>
+              </div>
+              <fieldset class="slds-form-element">
+                <legend class="slds-form-element__legend slds-form-element__label grs-form-element__label">Actions</legend>
+                <div class="slds-form-element__control">
+                  <grs-checkbox checked="true"></grs-checkbox>
+                </div>
+                <div class="slds-form-element__control">
+                  <grs-checkbox checked="true"></grs-checkbox>
+                </div>
+              </fieldset>
+              <fieldset class="slds-form-element">
+                <legend class="slds-form-element__legend slds-form-element__label grs-form-element__label">Public</legend>
+                <div class="slds-form-element__control">
+                  <grs-toggle checked="true"></grs-toggle>
+                </div>
+              </fieldset>
+              <div class="slds-form-element">
+                <label class="slds-form-element__label grs-form-element__label">Select Label</label>
+                <div class="slds-form-element__control">
+                  <grs-select></grs-select>
+                </div>
+              </div>
+              <div class="slds-form-element">
+                <label class="slds-form-element__label grs-form-element__label">Upload</label>
+                <div class="slds-form-element__control">
+                  <grs-uploader style="width: 300px"></grs-uploader>
+                </div>
+              </div>
+            </div>
+          </grs-modal>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>

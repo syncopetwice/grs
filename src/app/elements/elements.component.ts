@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./elements.component.scss']
 })
 export class ElementsComponent implements OnInit {
-
+  isModalOpen;
   constructor() { }
 
   ngOnInit() {

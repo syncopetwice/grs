@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TransactionService } from './transaction.service';
 
 @Component({
   selector: 'grs-transactions',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TransactionsComponent implements OnInit {
 
-  constructor() { }
+  public isEditMode: Boolean = false;
+
+  constructor(
+
+  ) { }
 
   ngOnInit() {
+  }
+
+  onToggleEditMode() {
+    this.isEditMode = !this.isEditMode;
   }
 
 }

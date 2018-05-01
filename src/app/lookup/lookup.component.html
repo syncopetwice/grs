@@ -1,50 +1,23 @@
-{{isSelectedItemVisible}}
 <div class="
   slds-combobox_container
   slds-has-inline-listbox
   grs-lookup
   ">
-  <div
-    class="
+  <div class="
       slds-combobox
       slds-dropdown-trigger
       slds-dropdown-trigger_click
       slds-combobox-lookup
-      "
-    aria-expanded="false"
-    aria-haspopup="listbox"
-    role="combobox"
-    [ngClass]="{
+      slds-is-open
+      " aria-expanded="false" aria-haspopup="listbox" role="combobox" [ngClass]="{
       'slds-is-open' : isDropdownVisible
-    }"
-    >
-    <div
-      class="
+    }">
+    <div class="
         slds-combobox__form-element
         slds-input-has-icon
         slds-input-has-icon_right
-        "
-      role="none"
-      >
-      <grs-input
-        (inputFocus)="isDropdownVisible = true"
-        (inputBlur)="isDropdownVisible = false"
-        placeholder="Type Account Name"
-        *ngIf="!isSelectedItemVisible"
-        ></grs-input>
-
-      <input
-        *ngIf="isSelectedItemVisible"
-        type="text"
-        class="slds-input slds-combobox__input slds-combobox__input-value" id="combobox-unique-id-34"
-        aria-autocomplete="list"
-        aria-controls="listbox-unique-id"
-        autocomplete="off"
-        role="textbox"
-        readonly=""
-        value="Salesforce.com, Inc."
-        />
-
+        " role="none">
+      <grs-input (inputFocus)="isDropdownVisible = true" placeholder="Type Account Name" *ngIf="!isSelectedItemVisible"></grs-input>
       <span class="
         slds-icon_container
         slds-icon-utility-search
@@ -52,7 +25,6 @@
         slds-input__icon_right
         ">
         <grs-icon type="search" *ngIf="!isSelectedItemVisible"></grs-icon>
-        <grs-icon type="remove" *ngIf="isSelectedItemVisible"></grs-icon>
       </span>
     </div>
     <div id="listbox-unique-id" role="listbox">
@@ -60,30 +32,35 @@
         slds-listbox
         slds-listbox_vertical
         slds-dropdown
-        slds-dropdown_fluid"
-        role="presentation"
-        >
-        <li
-          role="presentation"
-          class="slds-listbox__item"
-          (click)="isSelectedItemVisible = !isSelectedItemVisible"
-          >
-          <div
-            class="
+        slds-dropdown_fluid
+        grs-lookup__dropdown
+        " role="presentation">
+        <li role="presentation" class="slds-listbox__item" (click)="onItemSelect($event)">
+          <div class="
               slds-media
               slds-listbox__option
               slds-listbox__option_entity
               slds-listbox__option_has-meta
-              "
-            role="option"
-            >
+              grs-lookup__option
+              " role="option">
             <span class="slds-media__body">
-              <span class="slds-listbox__option-text slds-listbox__option-text_entity">Acme</span>
+              <span class="slds-listbox__option-text slds-listbox__option-text_entity">Acme Inc.</span>
               <span class="slds-listbox__option-meta slds-listbox__option-meta_entity">Account • San Francisco</span>
             </span>
           </div>
         </li>
       </ul>
     </div>
+  </div>
+</div>
+
+
+<div *ngIf="isSelectedItemVisible" class="grs-lookup__selected">
+  <div class="slds-grid">
+    <div class="slds-grid slds-grid_vertical-align-center grs-lookup__selected-item">
+      Acme Inc.
+      <span class="slds-m-left_x-small grs-lookup__selected-close-icon" (click)="isSelectedItemVisible = false"></span>
+    </div>
+
   </div>
 </div>

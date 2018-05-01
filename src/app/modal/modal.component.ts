@@ -9,7 +9,7 @@ export class ModalComponent implements OnInit {
 
   @Input() open: boolean;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {}
 

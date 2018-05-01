@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { TransactionService } from '../transaction.service';
 
 @Component({
   selector: 'grs-transaction-header',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TransactionHeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public TS: TransactionService
+  ) { }
 
   ngOnInit() {
+
+  }
+
+  onToggleMode() {
+    this.TS.toggle();
   }
 
 }

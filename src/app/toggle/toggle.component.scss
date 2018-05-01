@@ -1,14 +1,13 @@
 :host {
-  display: block;
+    display: block;
 }
 
 .slds-checkbox_toggle {
     width: 100%;
     &.is-static {
-      min-height: 32px;
+        min-height: 32px;
     }
 }
-
 
 .slds-checkbox_toggle .slds-checkbox_faux {
     display: block;
@@ -17,18 +16,14 @@
     height: 25px;
     padding: 0 0.125rem;
     border-radius: 15rem;
+    border: 1px solid #e5ebef;
     transition: background-color 0.2s cubic-bezier(0.75, 0, 0.08, 1);
-    background: rgb(229, 235, 239);
-    background: -moz-linear-gradient(top, rgba(229, 235, 239, 1) 0%, rgba(220, 225, 229, 1) 100%);
-    background: -webkit-linear-gradient(top, rgba(229, 235, 239, 1) 0%, rgba(220, 225, 229, 1) 100%);
-    background: linear-gradient(to bottom, rgba(229, 235, 239, 1) 0%, rgba(220, 225, 229, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5ebef', endColorstr='#dce1e5', GradientType=0);
+    background: #fff;
 }
 
 .slds-checkbox_toggle .slds-checkbox_faux:hover,
 .slds-checkbox_toggle .slds-checkbox_faux:focus {
     cursor: pointer;
-    background-color: darken(#e5ebef, 2%);
 }
 
 .slds-checkbox_toggle .slds-checkbox_faux:after {
@@ -37,10 +32,10 @@
     top: 2px;
     left: 2px;
     background-color: white;
-    border-radius: 15rem;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
-    width: 21px;
-    height: 21px;
+    border-radius: 50%;
+    border: 1px solid #e5ebef;
+    width: 19px;
+    height: 19px;
 }
 
 .slds-checkbox_toggle [type="checkbox"] {
@@ -57,11 +52,8 @@
 .slds-checkbox_toggle [type="checkbox"]:checked+.slds-checkbox_faux,
 .slds-checkbox_toggle [type="checkbox"]:checked~.slds-checkbox_faux,
 .slds-checkbox_toggle [type="checkbox"]:checked+.slds-checkbox_faux_container .slds-checkbox_faux {
-    background: rgb(55, 231, 197);
-    background: -moz-linear-gradient(top, rgba(55, 231, 197, 1) 0%, rgba(0, 215, 239, 1) 100%);
-    background: -webkit-linear-gradient(top, rgba(55, 231, 197, 1) 0%, rgba(0, 215, 239, 1) 100%);
-    background: linear-gradient(to bottom, rgba(55, 231, 197, 1) 0%, rgba(0, 215, 239, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#37e7c5', endColorstr='#00d7ef', GradientType=0);
+    background: transparent;
+    border: 1px solid #765AFF;
 }
 
 .slds-checkbox_toggle [type="checkbox"]:checked+.slds-checkbox_faux:hover,
@@ -70,7 +62,7 @@
 .slds-checkbox_toggle [type="checkbox"]:checked~.slds-checkbox_faux:focus,
 .slds-checkbox_toggle [type="checkbox"]:checked+.slds-checkbox_faux_container .slds-checkbox_faux:hover,
 .slds-checkbox_toggle [type="checkbox"]:checked+.slds-checkbox_faux_container .slds-checkbox_faux:focus {
-    background-color: darken(#37e7c5, 5%);
+    // background: darken(#765AFF, 5%);
 }
 
 .slds-checkbox_toggle [type="checkbox"]:checked+.slds-checkbox_faux:before,
@@ -78,14 +70,14 @@
 .slds-checkbox_toggle [type="checkbox"]:checked+.slds-checkbox_faux_container .slds-checkbox_faux:before {
     content: '';
     position: absolute;
-    background-color: white;
-    border-radius: 15rem;
-    box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.15);
+    background-color: #765AFF;
+    border-radius: 50%;
+    // box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.15);
     transition: transform 0.2s cubic-bezier(0.75, 0, 0.08, 1);
     top: 2px;
     right: 2px;
-    width: 21px;
-    height: 21px;
+    width: 19px;
+    height: 19px;
 }
 
 .slds-checkbox_toggle [type="checkbox"]:checked+.slds-checkbox_faux:after,
@@ -97,7 +89,7 @@
 .slds-checkbox_toggle [type="checkbox"]:checked:focus+.slds-checkbox_faux,
 .slds-checkbox_toggle [type="checkbox"]:checked:focus~.slds-checkbox_faux,
 .slds-checkbox_toggle [type="checkbox"]:checked:focus+.slds-checkbox_faux_container .slds-checkbox_faux {
-    background-color: #37e7c5;
+    // background-color: #765AFF;
 }
 
 .slds-checkbox_toggle [type="checkbox"][disabled]+.slds-checkbox_faux,
@@ -105,6 +97,7 @@
 .slds-checkbox_toggle [type="checkbox"][disabled]+.slds-checkbox_faux_container .slds-checkbox_faux {
     background-color: darken(#e5ebef, 3%);
     opacity: 0.45;
+    border-color: #e5ebef;
     pointer-events: none;
 }
 

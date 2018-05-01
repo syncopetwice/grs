@@ -60,11 +60,7 @@
     right: 2px;
     left: 2px;
     border-radius: 0.125rem;
-    background: rgb(55, 231, 197);
-    background: -moz-linear-gradient(top, rgba(55, 231, 197, 1) 0%, rgba(0, 215, 239, 1) 100%);
-    background: -webkit-linear-gradient(top, rgba(55, 231, 197, 1) 0%, rgba(0, 215, 239, 1) 100%);
-    background: linear-gradient(to bottom, rgba(55, 231, 197, 1) 0%, rgba(0, 215, 239, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#37e7c5', endColorstr='#00d7ef', GradientType=0);
+    background: #913df6;
 }
 
 .slds-checkbox [type="checkbox"]:focus+.slds-checkbox_faux,
@@ -74,8 +70,8 @@
 .slds-checkbox [type="checkbox"]:focus+.slds-checkbox__label .slds-checkbox_faux,
 .slds-checkbox [type="checkbox"]:focus+.slds-checkbox__label .slds-checkbox--faux {
     content: '';
-    border-color: #37e7c5;
-    box-shadow: 0 0 3px #37e7c5;
+    border-color: #913df6;
+    box-shadow: 0 0 3px #913df6;
 }
 
 .slds-checkbox [type="checkbox"]:focus:checked>.slds-checkbox_faux,
@@ -84,7 +80,7 @@
 .slds-checkbox [type="checkbox"]:focus:checked~.slds-checkbox--faux,
 .slds-checkbox [type="checkbox"]:focus:checked+.slds-checkbox__label .slds-checkbox_faux,
 .slds-checkbox [type="checkbox"]:focus:checked+.slds-checkbox__label .slds-checkbox--faux {
-    border-color: #37e7c5;
+    border-color: #913df6;
     background-color: white;
 }
 
@@ -101,7 +97,7 @@
     left: 50%;
     width: 0.5rem;
     height: 2px;
-    background: #37e7c5;
+    background: #913df6;
     border: 0;
     transform: translate3d(-50%, -50%, 0);
 }

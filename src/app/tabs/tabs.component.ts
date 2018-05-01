@@ -31,34 +31,6 @@ export class TabsComponent implements OnInit {
   {
     id: 6,
     label: 'Purchase Orders'
-  },
-  {
-    id: 7,
-    label: 'Schedule'
-  },
-  {
-    id: 8,
-    label: 'Client Invoices'
-  },
-  {
-    id: 9,
-    label: 'Payments'
-  },
-  {
-    id: 10,
-    label: 'Finance'
-  },
-  {
-    id: 11,
-    label: 'Chatter'
-  },
-  {
-    id: 12,
-    label: 'Documents'
-  },
-  {
-    id: 13,
-    label: 'Logs'
   }
 ];
 

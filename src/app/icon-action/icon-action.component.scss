@@ -1,14 +1,24 @@
 :host {
-  display: block;
+    display: block;
 }
 
 .grs-icon-action {
-  border-radius: 0.125rem;
-  border-color: #e8e8e8 !important;
-  color: #49464c !important;
+    border: none;
+    color: #49464c !important;
+    &:hover,
+    &:focus {
+        background-color: #F0F3F5;
+        color: #9493a9;
+    }
+    &:focus {
+        box-shadow: 0 0 2px darken(#F0F3F5, 2%);
+    }
+    &:active {
+        background-color: darken(#F0F3F5, 2%);
+    }
 }
 
 .grs-icon-action__button-icon {
-  width: 1.25rem;
-  height: 1.25rem;
+    width: 1.25rem;
+    height: 1.25rem;
 }

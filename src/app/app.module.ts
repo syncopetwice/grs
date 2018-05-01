@@ -1,3 +1,4 @@
+import { TransactionService } from './transactions/transaction.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -60,7 +61,7 @@ import { LookupComponent } from './lookup/lookup.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [TransactionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

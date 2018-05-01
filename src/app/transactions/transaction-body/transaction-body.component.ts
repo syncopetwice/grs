@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'grs-transaction-body',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./transaction-body.component.scss']
 })
 export class TransactionBodyComponent implements OnInit {
+
+  @Input() isEditMode: Boolean = false;
 
   constructor() { }
 

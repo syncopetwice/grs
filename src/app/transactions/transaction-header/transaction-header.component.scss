@@ -16,5 +16,14 @@
 }
 
 .transaction-header__subheader {
-  color: #b1b1b3;
+  color: lighten(#49464c, 10%);
+  font-size: 12px;
+}
+
+.transaction-header__indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #FFD115;
+  display: block;
 }

@@ -1,17 +1,26 @@
 .grs-select_container {
   &::before {
-    border-bottom: 5px solid darken(#e5e7ee, 20%);
+    display: none;
   }
   &::after {
-    border-top: 5px solid darken(#e5e7ee, 20%);
+    border-top: 7px solid darken(#e5e7ee, 20%);
+    border-left-width: 5px;
+    border-right-width: 5px;
+    bottom: 14px;
+    right: 0.75rem;
   }
 }
 .grs-select {
-  border: 1px solid #e5e7ee;
-  padding: 0.5rem;
-  border-radius: 0.35rem;
+  border: none;
+  padding: 0.5rem 0.75rem !important;
+  border-radius: 0.25rem;
   line-height: 1.25rem;
   min-height: 1.25rem;
   font-size: 13px;
   height: calc(2.25rem + (1px * 2));
+  background-color: #f5f7f7;
+    &:focus {
+      background-color: darken(#f5f7f7, 1%);
+      box-shadow: inset 0 0 3px rgba(0,0,0,0.05);
+    }
 }

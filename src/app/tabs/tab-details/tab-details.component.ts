@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TransactionService } from '../../transactions/transaction.service';
 
 @Component({
   selector: 'grs-tab-details',
@@ -7,11 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TabDetailsComponent implements OnInit {
 
-  public isEditMode: Boolean = false;
+  public isSetSupplierModalOpen: Boolean = false;
 
-  constructor() { }
+  constructor(
+    public TS: TransactionService
+  ) { }
 
   ngOnInit() {
+  }
+
+  onItemSelect(): void {
+
   }
 
 }
