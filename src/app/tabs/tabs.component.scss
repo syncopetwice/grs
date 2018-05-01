@@ -107,7 +107,7 @@
 
 .grs-tabs__item.grs-active .grs-tabs__link,
 .grs-tabs__item.grs-is-active .grs-tabs__link {
-    color: darken(#AAB2C0, 5%) !important;
+    color: #49464c !important;
 }
 
 .grs-tabs__item.grs-active .grs-tabs__link:hover,
@@ -161,5 +161,6 @@
 
 .grs-tabs__content {
     position: relative;
-    padding: 1rem 1.25rem;
+    padding: 1rem;
+    margin-top: 0.125rem;
 }

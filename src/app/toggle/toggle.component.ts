@@ -9,6 +9,7 @@ export class ToggleComponent implements OnInit {
 
   @Input() disabled: boolean;
   @Input() checked: boolean;
+  @Input() static: boolean;
 
   constructor() { }
 

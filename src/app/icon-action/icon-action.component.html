@@ -2,11 +2,19 @@
   slds-button
   slds-button_icon
   slds-button_icon-border-filled
+  grs-icon-action
   ">
-  <svg class="slds-button__icon" aria-hidden="true">
-    <use
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#settings"
-      />
-  </svg>
+  <div class="
+    slds-grid
+    slds-grid_align-center
+    slds-grid_vertical-align-center
+    ">
+    <grs-icon
+      type="{{type}}"
+      class="
+        slds-button__icon
+        grs-icon-action__button-icon
+        "
+      ></grs-icon>
+  </div>
 </button>

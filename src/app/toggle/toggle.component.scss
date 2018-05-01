@@ -1,6 +1,14 @@
+:host {
+  display: block;
+}
+
 .slds-checkbox_toggle {
     width: 100%;
+    &.is-static {
+      min-height: 32px;
+    }
 }
+
 
 .slds-checkbox_toggle .slds-checkbox_faux {
     display: block;

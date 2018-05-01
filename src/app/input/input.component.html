@@ -1,6 +1,8 @@
 <input
-  type="text"
+  [type]="type"
   class="slds-input grs-input"
   placeholder="Placeholder Text"
   [disabled]="disabled"
+  (focus)="onInputFocus()"
+  (blur)="onInputBlur()"
   />

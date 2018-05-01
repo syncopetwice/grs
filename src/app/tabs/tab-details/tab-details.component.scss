@@ -1,0 +1,16 @@
+:host {
+  display: block;
+}
+
+.tab-details__form {
+  .slds-form-element {
+    + .slds-form-element {
+      margin-top: 1.5rem;
+    }
+  }
+}
+
+.tab-details_col {
+  border-radius: 0.125rem;
+  background-color: #fff;
+}

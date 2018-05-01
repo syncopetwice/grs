@@ -1,8 +1,12 @@
 .grs-input {
-    border: 1px solid darken(#ebedf2, 2%);
-    padding: 0.5rem;
-    border-radius: 0.35rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.25rem;
     line-height: 1.25rem;
     min-height: 1.25rem;
     font-size: 13px;
+    font-weight: 600;
+    border: none;
+    color: #49474c;
+    background-color: #f5f7f7;
+    &:focus {}
 }

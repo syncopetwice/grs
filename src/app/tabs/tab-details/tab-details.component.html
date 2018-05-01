@@ -1,0 +1,97 @@
+<button (click)="isEditMode = !isEditMode" class="slds-m-bottom_small slds-button slds-button_neutral">
+  <span *ngIf="!isEditMode">Edit Mode</span>
+  <span *ngIf="isEditMode">View Mode</span>
+</button>
+
+<div class="slds-grid slds-gutters slds-p-horizontal_x-small">
+  <div class="slds-col slds-size_1-of-3 slds-p-around_x-small tab-details_col">
+
+    <div class="slds-form slds-form_stacked tab-details__form">
+
+      <div class="slds-form-element">
+        <label class="slds-form-element__label">Transaction Number</label>
+        <div class="slds-form-element__control">
+          <div *ngIf="!isEditMode" class="slds-form-element__static">
+            John Williams
+          </div>
+          <grs-input *ngIf="isEditMode"></grs-input>
+        </div>
+      </div>
+
+      <div class="slds-form-element">
+        <label class="slds-form-element__label">Client</label>
+        <div class="slds-form-element__control">
+          <div *ngIf="!isEditMode" class="slds-form-element__static">
+            Anthony Dawson
+          </div>
+          <grs-input *ngIf="isEditMode"></grs-input>
+        </div>
+      </div>
+
+      <div class="slds-form-element">
+        <label class="slds-form-element__label">POC</label>
+        <div class="slds-form-element__control">
+          <div *ngIf="!isEditMode" class="slds-form-element__static">
+            John Williams
+          </div>
+          <grs-input *ngIf="isEditMode"></grs-input>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="slds-col slds-size_1-of-3 slds-p-around_x-small tab-details_col">
+    <div class="slds-form slds-form_stacked tab-details__form">
+
+      <div class="slds-form-element">
+        <label class="slds-form-element__label">Expedite</label>
+        <div class="slds-form-element__control">
+          <grs-toggle checked="true" static="true"></grs-toggle>
+        </div>
+      </div>
+
+      <div class="slds-form-element">
+        <label class="slds-form-element__label">Deposit</label>
+        <div class="slds-form-element__control">
+          <div *ngIf="!isEditMode" class="slds-form-element__static">
+            50%
+          </div>
+          <grs-input *ngIf="isEditMode"></grs-input>
+        </div>
+      </div>
+
+      <div class="slds-form-element">
+        <label class="slds-form-element__label">Show Manufacturer</label>
+        <div class="slds-form-element__control">
+          <grs-toggle checked="false" disabled="true" static="true"></grs-toggle>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="slds-col slds-size_1-of-3 slds-p-around_x-small tab-details_col">
+    <div class="slds-form slds-form_stacked tab-details__form">
+      <div class="slds-form-element">
+        <label class="slds-form-element__label">User Account</label>
+        <div class="slds-form-element__control">
+          <div *ngIf="!isEditMode" class="slds-form-element__static">
+            Alex Turner
+          </div>
+          <grs-lookup></grs-lookup>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="slds-grid slds-gutters slds-p-horizontal_x-small slds-m-top_small">
+  <div class="slds-col slds-size_2-of-3 slds-p-around_x-small tab-details_col">
+    <div class="slds-form-element">
+      <label class="slds-form-element__label">Notes</label>
+      <div class="slds-form-element__control">
+        <grs-textarea></grs-textarea>
+      </div>
+    </div>
+  </div>
+</div>

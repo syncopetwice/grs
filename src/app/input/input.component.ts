@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'grs-input',
@@ -6,10 +6,23 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./input.component.scss']
 })
 export class InputComponent implements OnInit {
+
   @Input() disabled: boolean;
-  constructor() { }
+  @Input() type: String = 'text';
+  @Output() inputFocus = new EventEmitter();
+  @Output() inputBlur = new EventEmitter();
+
+  constructor() {}
 
   ngOnInit() {
+  }
+
+  onInputFocus(): void {
+    this.inputFocus.emit();
+  }
+
+  onInputBlur(): void {
+    this.inputBlur.emit();
   }
 
 }

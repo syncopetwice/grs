@@ -30,6 +30,14 @@
     *ngFor="let tab of tabs"
     role="tabpanel"
     >
-    {{tab.content}}
+    <ng-container *ngIf="tab.id === 1">
+      <grs-tab-details></grs-tab-details>
+    </ng-container>
+    <ng-container *ngIf="tab.id === 2">
+      <grs-tab-finishes></grs-tab-finishes>
+    </ng-container>
+    <ng-container *ngIf="tab.id === 3">
+      <grs-tab-labor></grs-tab-labor>
+    </ng-container>
   </div>
 </div>
