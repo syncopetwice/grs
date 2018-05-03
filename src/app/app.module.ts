@@ -31,6 +31,7 @@ import { TabLaborComponent } from './tabs/tab-labor/tab-labor.component';
 import { LookupComponent } from './lookup/lookup.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { TreeViewComponent } from './tree-view/tree-view.component';
+import { TreeViewItemComponent } from './tree-view/tree-view-item/tree-view-item.component';
 
 
 @NgModule({
@@ -60,7 +61,8 @@ import { TreeViewComponent } from './tree-view/tree-view.component';
     TabLaborComponent,
     LookupComponent,
     SidebarComponent,
-    TreeViewComponent
+    TreeViewComponent,
+    TreeViewItemComponent
   ],
   imports: [
     BrowserModule,

@@ -18,7 +18,7 @@ export class TabDetailsComponent implements OnInit {
   ngOnInit() {
     setTimeout(() => {
       this.isPreloaderActive = false;
-    }, 1000);
+    }, 100);
   }
 
   onItemSelect(): void {
