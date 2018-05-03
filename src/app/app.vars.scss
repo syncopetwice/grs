@@ -1,0 +1,35 @@
+$colors: (
+  primary: (
+    base: darken(#00eec4, 5%),
+    lighten: lighten(#00eec4, 7%),
+    light: lighten(#00eec4, 10%),
+    dark: darken(#00eec4, 15%),
+    border: #00d5af,
+    text: #00b494,
+    hover: rgba(#00d5a0, 0.96),
+    hoverlight: rgba(#00d5a0, 0.26)
+  ),
+  neutral : (
+    base: #F0F3F5,
+    light: lighten(#F0F3F5, 10%),
+    dark: darken(#F0F3F5, 15%)
+  ),
+  info: (
+    base: #ffbea0,
+    light: lighten(#ffbea0, 10%),
+    lighten: lighten(#ffbea0, 15%),
+    dark: darken(#ffbea0, 15%)
+  )
+) !default;
+
+$backgrounds: (
+  ground: #fffcf9
+) !default;
+
+$font: (
+  family: Lato,
+  colors: (
+    brand: #161517,
+    subbrand: #302d32
+  )
+) !default;

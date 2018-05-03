@@ -1,3 +1,5 @@
+@import '~app/app.vars.scss';
+
 .slds-radio {
     display: inline-block;
 }
@@ -55,11 +57,7 @@
     left: 50%;
     transform: translate3d(-50%, -50%, 0);
     border-radius: 50%;
-    background: rgb(55, 231, 197);
-    background: -moz-linear-gradient(top, rgba(55, 231, 197, 1) 0%, rgba(0, 215, 239, 1) 100%);
-    background: -webkit-linear-gradient(top, rgba(55, 231, 197, 1) 0%, rgba(0, 215, 239, 1) 100%);
-    background: linear-gradient(to bottom, rgba(55, 231, 197, 1) 0%, rgba(0, 215, 239, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#37e7c5', endColorstr='#00d7ef', GradientType=0);
+    background: map-get(map-get($map: $colors, $key: primary), base);
 }
 
 .slds-radio [type="radio"]:focus+.slds-radio_faux,
@@ -68,8 +66,8 @@
 .slds-radio [type="radio"]:focus~.slds-radio--faux,
 .slds-radio [type="radio"]:focus+.slds-radio__label .slds-radio_faux,
 .slds-radio [type="radio"]:focus+.slds-radio__label .slds-radio--faux {
-    border-color: #1589ee;
-    box-shadow: 0 0 3px #0070D2;
+    border-color: map-get(map-get($map: $colors, $key: primary), base);
+    box-shadow: 0 0 3px map-get(map-get($map: $colors, $key: primary), base);
 }
 
 .slds-radio [type="radio"][disabled] {

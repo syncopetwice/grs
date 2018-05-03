@@ -3,7 +3,11 @@
   slds-button_icon
   slds-button_icon-border-filled
   grs-icon-action
-  ">
+  "
+  [ngClass]="{
+    'grs-icon-action_small' : (size === 'small'),
+    'grs-icon-action_dark' : (theme === 'dark')
+  }">
   <div class="
     slds-grid
     slds-grid_align-center

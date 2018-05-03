@@ -8,6 +8,8 @@ import { Component, OnInit, Input } from '@angular/core';
 export class IconActionComponent implements OnInit {
 
   @Input() type: string;
+  @Input() size?: 'small';
+  @Input() theme?: 'dark';
 
   constructor() { }
 

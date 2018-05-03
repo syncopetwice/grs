@@ -35,7 +35,7 @@
         slds-dropdown_fluid
         grs-lookup__dropdown
         " role="presentation">
-        <li role="presentation" class="slds-listbox__item" (click)="onItemSelect($event)">
+        <li role="presentation" class="slds-listbox__item" (click)="onItemSelect()">
           <div class="
               slds-media
               slds-listbox__option
@@ -44,7 +44,7 @@
               grs-lookup__option
               " role="option">
             <span class="slds-media__body">
-              <span class="slds-listbox__option-text slds-listbox__option-text_entity">Acme Inc.</span>
+              <span class="slds-listbox__option-text slds-listbox__option-text_entity">Salesforce Inc.</span>
               <span class="slds-listbox__option-meta slds-listbox__option-meta_entity">Account • San Francisco</span>
             </span>
           </div>
@@ -58,7 +58,7 @@
 <div *ngIf="isSelectedItemVisible" class="grs-lookup__selected">
   <div class="slds-grid">
     <div class="slds-grid slds-grid_vertical-align-center grs-lookup__selected-item">
-      Acme Inc.
+      Salesforce Inc.
       <span class="slds-m-left_x-small grs-lookup__selected-close-icon" (click)="isSelectedItemVisible = false"></span>
     </div>
 

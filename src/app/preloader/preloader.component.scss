@@ -1,15 +1,31 @@
+@import '~app/app.vars.scss';
+
+:host {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-height: 300px;
+  background-color: rgba(255,255,255,1);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .preloader {
   width: 60px;
   height: 60px;
   position: relative;
-  margin: 50px auto;
 }
 
 .preloader__bounce-1 {
-  border: 1px solid darken(#37e7c5, 7%);
+  border: 1px solid map-get(map-get($map: $colors, $key: info), base);
 }
 .preloader__bounce-2 {
-  border: 1px solid darken(#37e7c5, 5%);
+  border: 1px solid map-get(map-get($map: $colors, $key: info), light);
 }
 
 .preloader__bounce-1,
@@ -18,7 +34,7 @@
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: #37e7c5;
+  background-color: map-get(map-get($map: $colors, $key: info), base);
   opacity: 0.6;
   position: absolute;
   top: 0;

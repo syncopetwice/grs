@@ -9,12 +9,16 @@ import { TransactionService } from '../../transactions/transaction.service';
 export class TabDetailsComponent implements OnInit {
 
   public isSetSupplierModalOpen: Boolean = false;
+  public isPreloaderActive: Boolean = true;
 
   constructor(
     public TS: TransactionService
   ) { }
 
   ngOnInit() {
+    setTimeout(() => {
+      this.isPreloaderActive = false;
+    }, 1000);
   }
 
   onItemSelect(): void {

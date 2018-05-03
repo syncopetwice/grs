@@ -1,6 +1,7 @@
 import { TransactionService } from './transactions/transaction.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -28,6 +29,8 @@ import { TabDetailsComponent } from './tabs/tab-details/tab-details.component';
 import { TabFinishesComponent } from './tabs/tab-finishes/tab-finishes.component';
 import { TabLaborComponent } from './tabs/tab-labor/tab-labor.component';
 import { LookupComponent } from './lookup/lookup.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { TreeViewComponent } from './tree-view/tree-view.component';
 
 
 @NgModule({
@@ -55,11 +58,14 @@ import { LookupComponent } from './lookup/lookup.component';
     TabDetailsComponent,
     TabFinishesComponent,
     TabLaborComponent,
-    LookupComponent
+    LookupComponent,
+    SidebarComponent,
+    TreeViewComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [TransactionService],
   bootstrap: [AppComponent]

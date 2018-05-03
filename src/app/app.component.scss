@@ -1,8 +1,11 @@
+@import '~app/app.vars.scss';
+
 .grs {
-  font-family: 'Lato', sans-serif;
+  font-family: map-get($map: $font, $key: family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: lighten(#f6f4ff, 1%);
+
+  background-color: map-get($map: $backgrounds, $key: ground);
   min-height: 100vh;
   min-width: 100vw;
   padding: 24px;
@@ -11,6 +14,7 @@
 
 .grs-container {
   padding: 24px;
+  position: relative;
   background-color: #fff;
 }
 

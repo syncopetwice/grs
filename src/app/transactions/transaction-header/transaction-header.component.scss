@@ -1,13 +1,20 @@
+@import '~app/app.vars.scss';
+
 :host {
   display: block;
+
+}
+
+header {
+  border-bottom: 1px solid map-get(map-get($map: $colors, $key: info), light);
 }
 
 .transaction-header__icon {
-  fill: #49464c;
+  fill: map-get(map-get($map: $font, $key: colors), brand);
 }
 
 .transaction-header__title {
-  color: #49464c;
+  color: map-get(map-get($map: $font, $key: colors), brand);
   font-size: 15px;
   text-transform: uppercase;
   span {
@@ -16,7 +23,7 @@
 }
 
 .transaction-header__subheader {
-  color: lighten(#49464c, 10%);
+  color: map-get(map-get($map: $font, $key: colors), subbrand);
   font-size: 12px;
 }
 
@@ -24,6 +31,6 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  border: 2px solid #FFD115;
+  border: 2px solid map-get(map-get($map: $colors, $key: info), base);
   display: block;
 }

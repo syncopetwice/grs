@@ -1,3 +1,5 @@
+@import '~app/app.vars.scss';
+
 :host {
     display: block;
 }
@@ -16,7 +18,7 @@
     height: 25px;
     padding: 0 0.125rem;
     border-radius: 15rem;
-    border: 1px solid #e5ebef;
+    border: 1px solid map-get(map-get($map: $colors, $key: primary), base);
     transition: background-color 0.2s cubic-bezier(0.75, 0, 0.08, 1);
     background: #fff;
 }
@@ -33,7 +35,7 @@
     left: 2px;
     background-color: white;
     border-radius: 50%;
-    border: 1px solid #e5ebef;
+    border: 1px solid map-get(map-get($map: $colors, $key: primary), base);
     width: 19px;
     height: 19px;
 }
@@ -53,7 +55,7 @@
 .slds-checkbox_toggle [type="checkbox"]:checked~.slds-checkbox_faux,
 .slds-checkbox_toggle [type="checkbox"]:checked+.slds-checkbox_faux_container .slds-checkbox_faux {
     background: transparent;
-    border: 1px solid #765AFF;
+    border: 1px solid map-get(map-get($map: $colors, $key: primary), base);
 }
 
 .slds-checkbox_toggle [type="checkbox"]:checked+.slds-checkbox_faux:hover,
@@ -62,7 +64,7 @@
 .slds-checkbox_toggle [type="checkbox"]:checked~.slds-checkbox_faux:focus,
 .slds-checkbox_toggle [type="checkbox"]:checked+.slds-checkbox_faux_container .slds-checkbox_faux:hover,
 .slds-checkbox_toggle [type="checkbox"]:checked+.slds-checkbox_faux_container .slds-checkbox_faux:focus {
-    // background: darken(#765AFF, 5%);
+    // background: darken(map-get(map-get($map: $colors, $key: primary), base), 5%);
 }
 
 .slds-checkbox_toggle [type="checkbox"]:checked+.slds-checkbox_faux:before,
@@ -70,7 +72,7 @@
 .slds-checkbox_toggle [type="checkbox"]:checked+.slds-checkbox_faux_container .slds-checkbox_faux:before {
     content: '';
     position: absolute;
-    background-color: #765AFF;
+    background-color: map-get(map-get($map: $colors, $key: primary), base);
     border-radius: 50%;
     // box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.15);
     transition: transform 0.2s cubic-bezier(0.75, 0, 0.08, 1);
@@ -89,7 +91,7 @@
 .slds-checkbox_toggle [type="checkbox"]:checked:focus+.slds-checkbox_faux,
 .slds-checkbox_toggle [type="checkbox"]:checked:focus~.slds-checkbox_faux,
 .slds-checkbox_toggle [type="checkbox"]:checked:focus+.slds-checkbox_faux_container .slds-checkbox_faux {
-    // background-color: #765AFF;
+    // background-color: map-get(map-get($map: $colors, $key: primary), base);
 }
 
 .slds-checkbox_toggle [type="checkbox"][disabled]+.slds-checkbox_faux,

@@ -1,3 +1,5 @@
+@import '~app/app.vars.scss';
+
 .slds-checkbox {
     display: inline-block;
 }
@@ -20,7 +22,6 @@
     height: 1.15rem;
     display: block;
     position: relative;
-    vertical-align: middle;
     border: 1px solid #e2e0eb;
     border-radius: 0.125rem;
     background: white;
@@ -60,7 +61,7 @@
     right: 2px;
     left: 2px;
     border-radius: 0.125rem;
-    background: #913df6;
+    background: map-get(map-get($map: $colors, $key: primary), base);
 }
 
 .slds-checkbox [type="checkbox"]:focus+.slds-checkbox_faux,
@@ -70,8 +71,8 @@
 .slds-checkbox [type="checkbox"]:focus+.slds-checkbox__label .slds-checkbox_faux,
 .slds-checkbox [type="checkbox"]:focus+.slds-checkbox__label .slds-checkbox--faux {
     content: '';
-    border-color: #913df6;
-    box-shadow: 0 0 3px #913df6;
+    border-color: map-get(map-get($map: $colors, $key: primary), base);
+    box-shadow: 0 0 3px map-get(map-get($map: $colors, $key: primary), base);
 }
 
 .slds-checkbox [type="checkbox"]:focus:checked>.slds-checkbox_faux,
@@ -80,7 +81,7 @@
 .slds-checkbox [type="checkbox"]:focus:checked~.slds-checkbox--faux,
 .slds-checkbox [type="checkbox"]:focus:checked+.slds-checkbox__label .slds-checkbox_faux,
 .slds-checkbox [type="checkbox"]:focus:checked+.slds-checkbox__label .slds-checkbox--faux {
-    border-color: #913df6;
+    border-color: map-get(map-get($map: $colors, $key: primary), base);
     background-color: white;
 }
 
@@ -97,7 +98,7 @@
     left: 50%;
     width: 0.5rem;
     height: 2px;
-    background: #913df6;
+    background: map-get(map-get($map: $colors, $key: primary), base);
     border: 0;
     transform: translate3d(-50%, -50%, 0);
 }
