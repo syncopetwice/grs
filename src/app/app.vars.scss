@@ -19,6 +19,13 @@ $colors: (
     light: lighten(#ffbea0, 10%),
     lighten: lighten(#ffbea0, 15%),
     dark: darken(#ffbea0, 15%)
+  ),
+  active: (
+    base: #3D7AEE,
+    light: lighten(#3D7AEE, 5%),
+    lighten: lighten(#3D7AEE, 10%),
+    dark: darken(#3D7AEE, 5%),
+    darken: darken(#3D7AEE, 10%)
   )
 ) !default;
 

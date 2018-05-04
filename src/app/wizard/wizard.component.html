@@ -1,0 +1,33 @@
+<nav class="
+  slds-grid
+  grs-wizard__steps
+  ">
+  <div
+    class="
+      slds-p-vertical_x-small
+      slds-p-horizontal_small
+      slds-size_1-of-{{steps.length}}
+      grs-wizard__step
+      "
+    [ngClass]="{
+      'grs-wizard__step_is-active' : step.state === 'active',
+      'grs-wizard__step_is-inactive' : step.state === 'inactive',
+      'grs-wizard__step_is-complete' : step.state === 'complete'
+    }"
+    *ngFor="let step of steps"
+    >
+    <div class="
+      grs-wizard__step-container
+      slds-grid
+      slds-grid_vertical
+      slds-grid_vertical-align-center
+      ">
+      <div class="slds-m-bottom_x-small grs-wizard__step-icon">
+        <grs-icon type="{{step.icon}}"></grs-icon>
+      </div>
+      <div class="grs-wizard__step-label">
+        {{step.label}}
+      </div>
+    </div>
+  </div>
+</nav>

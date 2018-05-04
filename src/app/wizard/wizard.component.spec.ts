@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TreeViewItemComponent } from './tree-view-item.component';
+import { WizardComponent } from './wizard.component';
 
-describe('TreeViewItemComponent', () => {
-  let component: TreeViewItemComponent;
-  let fixture: ComponentFixture<TreeViewItemComponent>;
+describe('WizardComponent', () => {
+  let component: WizardComponent;
+  let fixture: ComponentFixture<WizardComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TreeViewItemComponent ]
+      declarations: [ WizardComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TreeViewItemComponent);
+    fixture = TestBed.createComponent(WizardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
