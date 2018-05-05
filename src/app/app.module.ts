@@ -32,6 +32,9 @@ import { LookupComponent } from './lookup/lookup.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { TreeViewComponent } from './tree-view/tree-view.component';
 import { WizardComponent } from './wizard/wizard.component';
+import { WizardStep1Component } from './wizard/wizard-step-1/wizard-step-1.component';
+import { WizardStep2Component } from './wizard/wizard-step-2/wizard-step-2.component';
+import { WizardStep3Component } from './wizard/wizard-step-3/wizard-step-3.component';
 
 @NgModule({
   declarations: [
@@ -61,7 +64,10 @@ import { WizardComponent } from './wizard/wizard.component';
     LookupComponent,
     SidebarComponent,
     TreeViewComponent,
-    WizardComponent
+    WizardComponent,
+    WizardStep1Component,
+    WizardStep2Component,
+    WizardStep3Component
   ],
   imports: [
     BrowserModule,

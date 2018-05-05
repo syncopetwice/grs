@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TreeViewComponent implements OnInit {
 
+  public isHeaderCollapsed: Boolean = false;
   public list = [];
 
   constructor() { }

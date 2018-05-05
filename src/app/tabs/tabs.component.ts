@@ -14,11 +14,11 @@ export class TabsComponent implements OnInit {
     label: 'Details'
   }, {
     id: 2,
-    label: 'Finishes'
+    label: 'Wizard'
   },
   {
     id: 3,
-    label: 'Labor'
+    label: 'Tree View'
   },
   {
     id: 4,

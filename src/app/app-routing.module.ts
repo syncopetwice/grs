@@ -14,7 +14,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/elements',
+    redirectTo: '/transactions',
     pathMatch: 'full'
   },
 ];
