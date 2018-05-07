@@ -1,8 +1,10 @@
 <grs-icon-action
   [type]="isSidebarOpen ? 'left' : 'right'"
-  size="small"
-  theme="dark"
   straight="true"
+  [options]="{
+    size: 'small',
+    theme: 'dark'
+  }"
   (click)="isSidebarOpen = !isSidebarOpen"
   ></grs-icon-action>
 
