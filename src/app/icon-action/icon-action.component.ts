@@ -10,6 +10,7 @@ export class IconActionComponent implements OnInit {
   @Input() type: string;
   @Input() size?: 'small';
   @Input() theme?: 'dark';
+  @Input() straight?;
 
   constructor() { }
 

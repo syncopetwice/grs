@@ -2,6 +2,7 @@
   [type]="isSidebarOpen ? 'left' : 'right'"
   size="small"
   theme="dark"
+  straight="true"
   (click)="isSidebarOpen = !isSidebarOpen"
   ></grs-icon-action>
 
@@ -26,7 +27,6 @@
   </header>
   <section class="
     slds-grow
-    slds-p-vertical_large
     slds-p-horizontal_small
     slds-scrollable_y
     grs-sidebar__body
@@ -38,14 +38,22 @@
           slds-grid
           slds-grid_vertical-align-center
           grs-sidebar__item
+          slds-p-vertical_xx-small
+          slds-p-horizontal_x-small
           "
         >
-        <grs-icon-action type="{{item.icon}}" class="slds-m-right_small"></grs-icon-action>
+        <div class="
+          slds-m-right_small
+          slds-m-bottom_x-small
+          grs-sidebar__item-icon
+          ">
+          <grs-icon type="{{item.icon}}"></grs-icon>
+        </div>
         {{item.label}}
       </li>
     </ul>
   </section>
-  <footer
+  <!-- <footer
     class="
       slds-shrink-none
       slds-p-vertical_small
@@ -57,5 +65,5 @@
       >
     <grs-action type="neutral">Cancel</grs-action>
     <grs-action type="brand" class="slds-m-left_x-small">Save</grs-action>
-  </footer>
+  </footer> -->
 </div>

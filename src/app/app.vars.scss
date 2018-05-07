@@ -1,12 +1,11 @@
 $colors: (
   primary: (
-    base: darken(#00eec4, 5%),
-    lighten: lighten(#00eec4, 7%),
-    light: lighten(#00eec4, 10%),
-    dark: darken(#00eec4, 15%),
-    border: #00d5af,
+    base: #6df0d8,
+    lighten: lighten(#6df0d8, 7%),
+    light: lighten(#6df0d8, 10%),
+    dark: darken(#6df0d8, 15%),
     text: #00b494,
-    hover: rgba(#00d5a0, 0.96),
+    hover: #DBF8F3,
     hoverlight: rgba(#00d5a0, 0.26)
   ),
   neutral : (

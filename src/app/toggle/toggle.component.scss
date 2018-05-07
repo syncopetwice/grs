@@ -1,7 +1,7 @@
 @import '~app/app.vars.scss';
 
 :host {
-    display: block;
+    display: inline-block;
 }
 
 .slds-checkbox_toggle {
@@ -20,7 +20,7 @@
     border-radius: 15rem;
     border: 1px solid map-get(map-get($map: $colors, $key: primary), base);
     transition: background-color 0.2s cubic-bezier(0.75, 0, 0.08, 1);
-    background: #fff;
+    background: map-get(map-get($map: $colors, $key: primary), hover);
 }
 
 .slds-checkbox_toggle .slds-checkbox_faux:hover,
@@ -74,7 +74,6 @@
     position: absolute;
     background-color: map-get(map-get($map: $colors, $key: primary), base);
     border-radius: 50%;
-    // box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.15);
     transition: transform 0.2s cubic-bezier(0.75, 0, 0.08, 1);
     top: 2px;
     right: 2px;

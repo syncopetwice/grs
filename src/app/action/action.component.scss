@@ -12,6 +12,7 @@
     transition: all 0.15s linear;
     border-radius: 0.125rem;
     box-shadow: none;
+    font-weight: 600;
     &:hover,
     &:focus {
         background-color: #F0F3F5;
@@ -31,21 +32,21 @@
 }
 
 .grs-action_brand {
-    // box-shadow: none;
-    // background-color: map-get($map: $colors, $key: brand);
     background: #fff;
     border: 1px solid map-get(map-get($map: $colors, $key: primary), base);
-    color: map-get(map-get($map: $colors, $key: primary), text);
+    color: map-get(map-get($map: $colors, $key: primary), dark);
     &:hover,
     &:focus {
-        border: 1px solid map-get(map-get($map: $colors, $key: primary), border);
+        border: 1px solid #62E2C8;
+        text-shadow: 1px 1px 2px rgba(0,0,0,.2);
         color: #fff;
-        background-color: map-get(map-get($map: $colors, $key: primary), hover);
+        background-color: #C4F4EA;
     }
     &:focus {
       box-shadow: inset 0 0 2px rgba(0,0,0,0.25);
     }
     &:active {
+        text-shadow: 1px 1px 2px rgba(0,0,0,.2);
         border-color: none;
         background-color: map-get(map-get($map: $colors, $key: primary), base);
         box-shadow: inset 0 0 2px rgba(0,0,0,0.35);
@@ -63,7 +64,6 @@
     &:hover,
     &:focus {
       border: 1px solid map-get(map-get($map: $colors, $key: info), lighten);
-      // background-color: lighten(#F0F3F5, 2%);
       background-color: map-get(map-get($map: $colors, $key: info), lighten);
     }
     &:focus {

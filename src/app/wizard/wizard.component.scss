@@ -58,21 +58,21 @@
 .grs-wizard__step_is-active {
   &:not(:first-child) {
     &::before {
-      border-color: map-get(map-get($map: $colors, $key: active), base);
+      border-color: map-get(map-get($map: $colors, $key: info), base);
     }
     &::after {
-      border-color: map-get(map-get($map: $colors, $key: active), base);
-      background-color: map-get(map-get($map: $colors, $key: active), base);
+      border-color: map-get(map-get($map: $colors, $key: info), base);
+      background-color: map-get(map-get($map: $colors, $key: info), base);
     }
   }
   .grs-wizard__step-icon {
-    border: 1px solid map-get(map-get($map: $colors, $key: active), base);
+    border: 1px solid map-get(map-get($map: $colors, $key: info), base);
     fill: #fff;
-    background-color: map-get(map-get($map: $colors, $key: active), base);
+    background-color: map-get(map-get($map: $colors, $key: info), base);
   }
   .grs-wizard__step-label {
     font-weight: 400;
-    color: map-get(map-get($map: $colors, $key: active), base);
+    color: map-get(map-get($map: $colors, $key: info), base);
   }
 }
 
