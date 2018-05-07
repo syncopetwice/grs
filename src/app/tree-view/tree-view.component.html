@@ -13,9 +13,16 @@
     <tr class="slds-text-title_caps">
       <th class="slds-cell-buffer_left" scope="col">
         <div class="slds-grid slds-grid_vertical-align-center">
-          <grs-icon-action *ngIf="isHeaderCollapsed" (click)="isHeaderCollapsed = false" size="small" type="collapse"></grs-icon-action>
-          <grs-icon-action *ngIf="!isHeaderCollapsed" (click)="isHeaderCollapsed = true" size="small" type="expand"></grs-icon-action>
-          <div class="slds-truncate" title="Account Name">Account Name</div>
+          <grs-icon-action
+            (click)="isHeaderCollapsed = false"
+            [options]="{
+              transparent: true,
+              size: 'x-small',
+              theme: 'dark'
+            }"
+            [type]="isHeaderCollapsed ? 'collapse' : 'expand'"
+            ></grs-icon-action>
+          <div class="slds-truncate slds-m-left_x-small" title="Account Name">Account Name</div>
         </div>
       </th>
       <th scope="col">
@@ -32,8 +39,15 @@
       </th>
       <th class="slds-cell-shrink" scope="col">
         <div class="slds-grid slds-grid_align-end">
-          <grs-icon-action *ngIf="isHeaderCollapsed" (click)="isHeaderCollapsed = false" size="small" type="collapse"></grs-icon-action>
-          <grs-icon-action *ngIf="!isHeaderCollapsed" (click)="isHeaderCollapsed = true" size="small" type="expand"></grs-icon-action>
+          <grs-icon-action
+            [options]="{
+              transparent: true,
+              size: 'x-small',
+              theme: 'dark'
+            }"
+            (click)="isHeaderCollapsed = false"
+            [type]="isHeaderCollapsed ? 'collapse' : 'expand'"
+            ></grs-icon-action>
         </div>
       </th>
     </tr>
@@ -48,9 +62,18 @@
       tabindex="0"
       >
       <th class="slds-tree__item grs-tree-view__item" data-label="Account Name" scope="row">
-        <grs-icon-action *ngIf="item.isCollapsed" (click)="item.isCollapsed = false" size="small" type="collapse"></grs-icon-action>
-        <grs-icon-action *ngIf="!item.isCollapsed" (click)="item.isCollapsed = true" size="small" type="expand"></grs-icon-action>
-        <div class="slds-truncate slds-m-left_x-small" title="Rewis Inc">
+        <div class="grs-tree-view__item-icon-container">
+            <grs-icon-action
+            (click)="item.isCollapsed = false"
+            [options]="{
+              transparent: true,
+              size: 'x-small',
+              theme: 'dark'
+            }"
+            [type]="isHeaderCollapsed ? 'collapse' : 'expand'"
+            ></grs-icon-action>
+        </div>
+        <div class="slds-truncate slds-m-left_x-small slds-m-top_xx-small" title="Rewis Inc">
           <a href="javascript:void(0);" class="grs-tree-view__item-link" tabindex="-1">Rewis Inc</a>
         </div>
       </th>
@@ -70,10 +93,33 @@
       </td>
       <td class="slds-cell-shrink" role="gridcell">
         <div class="slds-grid slds-grid_align-end">
-          <grs-icon-action type="preview"></grs-icon-action>
-          <grs-icon-action type="edit" class="slds-m-left_x-small"></grs-icon-action>
-          <grs-icon-action type="delete" class="slds-m-left_x-small"></grs-icon-action>
-          <grs-icon-action type="copy" class="slds-m-left_x-small"></grs-icon-action>
+          <grs-icon-action
+            type="preview"
+            [options]="{
+              transparent: true
+            }"
+            ></grs-icon-action>
+          <grs-icon-action
+            type="edit"
+            class="slds-m-left_x-small"
+            [options]="{
+              transparent: true
+            }"
+            ></grs-icon-action>
+          <grs-icon-action
+            type="delete"
+            class="slds-m-left_x-small"
+            [options]="{
+              transparent: true
+            }"
+            ></grs-icon-action>
+          <grs-icon-action
+            type="copy"
+            class="slds-m-left_x-small"
+            [options]="{
+              transparent: true
+            }"
+            ></grs-icon-action>
         </div>
       </td>
     </tr>

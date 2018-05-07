@@ -7,7 +7,11 @@
   [ngClass]="{
     'grs-icon-action_small' : (size === 'small'),
     'grs-icon-action_dark' : (theme === 'dark'),
-    'grs-icon-action_straight' : straight
+    'grs-icon-action_straight' : straight,
+    'grs-icon-action_transparent' : options?.transparent,
+    'grs-icon-action_x-small' : (options.size === 'x-small'),
+    'grs-icon-action_small' : (options.size === 'small'),
+    'grs-icon-action_dark' : (options.theme === 'dark')
   }">
   <div class="
     slds-grid

@@ -29,6 +29,15 @@
   }
 }
 
+.grs-icon-action_x-small {
+  width: 1rem;
+  height: 1rem;
+  .grs-icon-action__button-icon {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+}
+
 .grs-icon-action_dark {
   &:hover,
   &:focus {
@@ -46,4 +55,8 @@
 
 .grs-icon-action_straight {
   border-radius: 0;
+}
+
+.grs-icon-action_transparent {
+  background-color: transparent;
 }

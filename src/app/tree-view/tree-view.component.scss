@@ -31,19 +31,32 @@
       }
     }
     tbody {
+      tr:hover {
+        td,
+        th {
+          box-shadow: none !important;
+          background-color: map-get(map-get($map: $colors, $key: info), lighten);
+          border-bottom: 1px solid map-get(map-get($map: $colors, $key: info), base);
+        }
+      }
       th {
         border-top: none !important;
+        border-bottom: 1px solid transparent;
       }
       td {
         border-top: none;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
+        border-bottom: 1px solid transparent;
+        // padding-top: 0.5rem;
+        // padding-bottom: 0.5rem;
       }
     }
 }
 
 .grs-tree-view__item {
   border-top: none;
+  .grs-tree-view__item-icon-container {
+    height: 2rem;
+  }
   .grs-tree-view__item-link {
     color: map-get(map-get($map: $font, $key: colors), subbrand);
     font-weight: 600;
