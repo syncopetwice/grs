@@ -8,10 +8,14 @@
       slds-dropdown-trigger
       slds-dropdown-trigger_click
       slds-combobox-lookup
-      slds-is-open
-      " aria-expanded="false" aria-haspopup="listbox" role="combobox" [ngClass]="{
-      'slds-is-open' : isDropdownVisible
-    }">
+      "
+      aria-expanded="false"
+      aria-haspopup="listbox"
+      role="combobox"
+      [ngClass]="{
+        'slds-is-open' : isDropdownVisible
+      }"
+    >
     <div class="
         slds-combobox__form-element
         slds-input-has-icon
@@ -57,9 +61,22 @@
 
 <div *ngIf="isSelectedItemVisible" class="grs-lookup__selected">
   <div class="slds-grid">
-    <div class="slds-grid slds-grid_vertical-align-center grs-lookup__selected-item">
-      Salesforce Inc.
-      <span class="slds-m-left_x-small grs-lookup__selected-close-icon" (click)="isSelectedItemVisible = false"></span>
+    <div class="
+      slds-grid
+      slds-grid_align-spread
+      slds-grid_vertical-align-center
+      grs-lookup__selected-item
+      ">
+      <span>Salesforce Inc.</span>
+      <span
+        class="
+          slds-shrink-none
+          slds-m-left_x-small
+          grs-lookup__selected-close-icon
+          "
+          (click)="isSelectedItemVisible = false"
+        >
+      </span>
     </div>
 
   </div>

@@ -1,0 +1,85 @@
+@import '~app/app.vars.scss';
+
+:host {
+  display: block;
+}
+
+.grs-multi-select__dropdown {
+
+    border: none;
+    border-radius: 0.125rem;
+    padding: 0.125rem 0;
+    max-width: calc(100% - 2px);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+
+}
+
+
+
+
+.multi-select__dropdown-item-option {
+  padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    color: #49474c;
+  &:hover,
+  &:focus {
+    background-color: lighten(#f5f7f7, 2%) !important;
+  }
+}
+
+.multi-select__pill {
+  border: none;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  background-color: map-get(map-get($map: $colors, $key: info), base);
+  border-radius: 0.125rem;
+  padding: 0.125rem 0.5rem;
+  &:focus,
+  &:hover {
+    outline: none;
+    border-radius: 0.125rem;
+    background-color: map-get(map-get($map: $colors, $key: info), base);
+    box-shadow: inset 0 0 3px rgba(0,0,0,0.05);
+  }
+}
+.multi-select__pill-label {
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.multi-select__pill-remove {
+  position: relative;
+  display: inline-block;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: calc(25% + 2px);
+    width: 2px;
+    height: 100%;
+    background-color: #fff;
+    z-index: 1;
+    transform: rotate(45deg);
+
+  }
+  &::after {
+    content: '';
+    transform: rotate(-45deg);
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: calc(25% + 1px);
+    width: 2px;
+    height: 100%;
+    background-color: #fff;
+  }
+}

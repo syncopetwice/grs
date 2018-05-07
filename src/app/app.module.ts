@@ -35,6 +35,7 @@ import { WizardComponent } from './wizard/wizard.component';
 import { WizardStep1Component } from './wizard/wizard-step-1/wizard-step-1.component';
 import { WizardStep2Component } from './wizard/wizard-step-2/wizard-step-2.component';
 import { WizardStep3Component } from './wizard/wizard-step-3/wizard-step-3.component';
+import { MultiSelectComponent } from './multi-select/multi-select.component';
 
 @NgModule({
   declarations: [
@@ -67,7 +68,8 @@ import { WizardStep3Component } from './wizard/wizard-step-3/wizard-step-3.compo
     WizardComponent,
     WizardStep1Component,
     WizardStep2Component,
-    WizardStep3Component
+    WizardStep3Component,
+    MultiSelectComponent
   ],
   imports: [
     BrowserModule,

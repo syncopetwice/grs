@@ -51,10 +51,35 @@
 }
 
 .grs-lookup__selected-close-icon {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  border: 2px solid #fff;
-  box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
   cursor: pointer;
+  width: 14px;
+  fill: #fff;
+  border: 2px solid #fff;
+  height: 14px;
+  border-radius: 50%;
+  display: block;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: calc(25% + 2px);
+    width: 2px;
+    height: 100%;
+    background-color: #fff;
+    z-index: 1;
+    transform: rotate(45deg);
+
+  }
+  &::after {
+    content: '';
+    transform: rotate(-45deg);
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: calc(25% + 1px);
+    width: 2px;
+    height: 100%;
+    background-color: #fff;
+  }
 }
