@@ -21,7 +21,17 @@
 
 @media (min-width: 48em) {
     .grs-tabs .grs-tabs__item + .grs-tabs__item {
-        margin-left: 1rem;
+        margin-left: 0;
+        border-left: 1px solid rgb(225,225,225);
+        /* &::before {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 1px;
+          height: calc(100% - 2px);
+          background-color: rgb(225,225,225);
+        } */
     }
 }
 
@@ -33,11 +43,12 @@
     display: block;
     text-decoration: none;
     cursor: pointer;
-    height: 2rem;
-    line-height: 2rem;
+    height: 1.25rem;
+    line-height: 1.25rem;
     border-bottom: 1px solid transparent;
     padding: 0 0.25rem;
     color: #49464c;
+    font-size: 12px;
 }
 
 .grs-tabs .grs-tabs__item > a:focus {
@@ -78,30 +89,58 @@
 .grs-tabs__item {
     color: #706e6b;
     position: relative;
-    padding: 0 0.75rem;
-    margin-bottom: -2px;
+    padding: 0 0 0.15rem 0;
+    // margin-bottom: -2px;
     text-transform: uppercase;
+    overflow: hidden;
     letter-spacing: 0.0625em;
+    border-bottom: 1px solid rgb(225,225,225);
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.15);
+      transition: all 0.2s ease-in-out;
+    }
+    &:first-child {
+      padding-left: 0;
+      &::after {
+        border-top-left-radius: 150px;
+      }
+    }
+    &:last-child {
+      padding-right: 0;
+      &::after {
+        border-top-right-radius: 150px;
+      }
+    }
 }
 
-.grs-tabs__item:after {
-    display: block;
-    content: '';
-    bottom: 0;
-    left: 0;
-    right: 0;
-    position: absolute;
-    height: 2px;
-}
+// .grs-tabs__item:after {
+//     display: block;
+//     content: '';
+//     bottom: 0;
+//     left: 0;
+//     right: 0;
+//     position: absolute;
+//     height: 2px;
+// }
 
 .grs-tabs__item.grs-active,
 .grs-tabs__item.grs-is-active {
     color: #3e3e3c;
 }
 
-.grs-tabs__item.grs-active:after,
-.grs-tabs__item.grs-is-active:after {
-  background-color: map-get(map-get($map: $colors, $key: info), base) !important;
+.grs-tabs__item.grs-active,
+.grs-tabs__item.grs-is-active {
+  border-bottom-color: transparent;
+  &::after {
+    display: none;
+  }
+  // background-color: map-get(map-get($map: $colors, $key: info), base) !important;
 }
 
 .grs-tabs__item.grs-active .grs-tabs__link,
@@ -114,9 +153,9 @@
     color: #005fb2;
 }
 
-.grs-tabs__item:hover:after {
-    background-color: lighten(#AAB2C0, 18%);
-}
+// .grs-tabs__item:hover:after {
+//     background-color: lighten(#AAB2C0, 18%);
+// }
 
 .grs-tabs__item:focus,
 .grs-tabs__item.grs-has-focus {
