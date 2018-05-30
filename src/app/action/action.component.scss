@@ -34,7 +34,7 @@
 .grs-action_brand {
     background: #fff;
     border: 1px solid map-get(map-get($map: $colors, $key: primary), base);
-    color: map-get(map-get($map: $colors, $key: primary), dark);
+    color: map-get(map-get($map: $colors, $key: primary), base);
     &:hover,
     &:focus {
         border: 1px solid #62E2C8;

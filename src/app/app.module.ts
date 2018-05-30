@@ -36,6 +36,9 @@ import { WizardStep1Component } from './wizard/wizard-step-1/wizard-step-1.compo
 import { WizardStep2Component } from './wizard/wizard-step-2/wizard-step-2.component';
 import { WizardStep3Component } from './wizard/wizard-step-3/wizard-step-3.component';
 import { MultiSelectComponent } from './multi-select/multi-select.component';
+import { DataTableComponent } from './data-table/data-table.component';
+import { TabDataTableComponent } from './tabs/tab-data-table/tab-data-table.component';
+import { PaginationComponent } from './pagination/pagination.component';
 
 @NgModule({
   declarations: [
@@ -69,7 +72,10 @@ import { MultiSelectComponent } from './multi-select/multi-select.component';
     WizardStep1Component,
     WizardStep2Component,
     WizardStep3Component,
-    MultiSelectComponent
+    MultiSelectComponent,
+    DataTableComponent,
+    TabDataTableComponent,
+    PaginationComponent,
   ],
   imports: [
     BrowserModule,

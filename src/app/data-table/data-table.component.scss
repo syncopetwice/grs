@@ -1,10 +1,10 @@
 @import "~app/app.vars";
 
 :host {
-    display: block;
+  display: block;
 }
 
-.grs-tree-view {
+.data-table {
   border-top: none;
   border-bottom: none;
     th,
@@ -52,17 +52,4 @@
         // padding-bottom: 0.5rem;
       }
     }
-}
-
-.grs-tree-view__item {
-  border-top: none;
-  .grs-tree-view__item-icon-container {
-    height: 2rem;
-  }
-  .grs-tree-view__item-link {
-    color: map-get(map-get($map: $font, $key: colors), subbrand);
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 11px;
-  }
 }

@@ -1,12 +1,12 @@
 $colors: (
   primary: (
-    base: #6df0d8,
-    lighten: lighten(#6df0d8, 7%),
-    light: lighten(#6df0d8, 10%),
-    dark: darken(#6df0d8, 15%),
-    text: #00b494,
+    base: #16d9b5,
+    lighten: lighten(#16d9b5, 7%),
+    light: lighten(#16d9b5, 10%),
+    dark: darken(#16d9b5, 15%),
+    text: #16d9b5,
     hover: #DBF8F3,
-    hoverlight: rgba(#00d5a0, 0.26)
+    hoverlight: rgba(#16d9b5, 0.26)
   ),
   neutral : (
     base: #F0F3F5,
@@ -14,10 +14,10 @@ $colors: (
     dark: darken(#F0F3F5, 15%)
   ),
   info: (
-    base: #ffbea0,
-    light: lighten(#ffbea0, 10%),
-    lighten: lighten(#ffbea0, 15%),
-    dark: darken(#ffbea0, 15%)
+    base: #ff8147,
+    light: lighten(#ff8147, 10%),
+    lighten: lighten(#ff8147, 15%),
+    dark: darken(#ff8147, 15%)
   ),
   active: (
     base: #3D7AEE,

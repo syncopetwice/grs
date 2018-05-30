@@ -1,11 +1,12 @@
 @import '~app/app.vars.scss';
 
 :host {
-    display: block;
+  display: block;
 }
 
 .grs-icon-action {
     border: none;
+    border-radius: 0.125rem;
     color: #49464c !important;
     &:hover,
     &:focus {
@@ -59,4 +60,13 @@
 
 .grs-icon-action_transparent {
   background-color: transparent;
+}
+
+.grs-icon-action_case {
+  background-color: #FFD740;
+
+  &:hover,
+  &:focus {
+    background-color: #FFC400;
+  }
 }

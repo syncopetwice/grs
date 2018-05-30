@@ -26,9 +26,7 @@
     }
 
   }
-
 }
-
 
 .grs-lookup__selected {
   padding: 0.25rem 0.75rem;
@@ -40,7 +38,8 @@
 }
 
 .grs-lookup__selected-item {
-  background-color: map-get(map-get($map: $colors, $key: info), base);
+  // background-color: map-get(map-get($map: $colors, $key: info), base);
+  background-color: #ffb28e;
   color: #fff;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
   text-transform: uppercase;

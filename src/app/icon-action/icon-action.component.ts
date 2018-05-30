@@ -14,6 +14,7 @@ interface Options {
 export class IconActionComponent implements OnInit {
 
   @Input() type: string;
+  @Input() subtype: string;
   @Input() theme?: 'dark';
   @Input() straight?;
 
