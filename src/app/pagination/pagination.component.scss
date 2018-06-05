@@ -7,8 +7,7 @@
 .pagination-button {
   border: none;
   line-height: 2rem;
-  color: #FDD835;
-  font-weight: bold;
+  color: #1b1e21;
   font-size: 14px;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -16,37 +15,28 @@
   &:hover,
   &:focus {
     background-color: transparent;
-    color: #FDD835;
   }
   &:focus,
   &:active {
+    color: #1b1e21;
     box-shadow: none;
-    color: #FDD835;
   }
   + .pagination-button {
-    margin-left: 0;
+    margin-left: 0.5rem;
   }
 }
 .pagination-button_active {
+  font-weight: 600;
   position: relative;
-  color: #FFC400;
-  &:hover,
-  &:focus,
-  &:active {
-    color: #FFC400;
-  }
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: 2px;
-    left: 15%;
-    width: 70%;
-    height: 2px;
-    background-color: #FFC400;
-  }
+  background-color: #f72f5f;
+  color: #fff;
+  border-radius: 0.125rem !important;
   &:hover {
-    &::after {
-      background-color: #FFC400;
-    }
+    color: #fff;
+    background-color: darken(#f72f5f, 2%);
+  }
+  &:focus {
+    color: #fff;
+    background-color: darken(#f72f5f, 3%);
   }
 }

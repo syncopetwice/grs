@@ -61,7 +61,7 @@
     right: 2px;
     left: 2px;
     border-radius: 0.125rem;
-    background: map-get(map-get($map: $colors, $key: primary), base);
+    background: #f1e017;
 }
 
 .slds-checkbox [type="checkbox"]:focus+.slds-checkbox_faux,
@@ -71,8 +71,8 @@
 .slds-checkbox [type="checkbox"]:focus+.slds-checkbox__label .slds-checkbox_faux,
 .slds-checkbox [type="checkbox"]:focus+.slds-checkbox__label .slds-checkbox--faux {
     content: '';
-    border-color: map-get(map-get($map: $colors, $key: primary), base);
-    box-shadow: 0 0 3px map-get(map-get($map: $colors, $key: primary), base);
+    border-color: #f1e017;
+    box-shadow: 0 0 3px #f1e017;
 }
 
 .slds-checkbox [type="checkbox"]:focus:checked>.slds-checkbox_faux,
@@ -81,7 +81,7 @@
 .slds-checkbox [type="checkbox"]:focus:checked~.slds-checkbox--faux,
 .slds-checkbox [type="checkbox"]:focus:checked+.slds-checkbox__label .slds-checkbox_faux,
 .slds-checkbox [type="checkbox"]:focus:checked+.slds-checkbox__label .slds-checkbox--faux {
-    border-color: map-get(map-get($map: $colors, $key: primary), base);
+    border-color: #f1e017;
     background-color: white;
 }
 
@@ -98,7 +98,7 @@
     left: 50%;
     width: 0.5rem;
     height: 2px;
-    background: map-get(map-get($map: $colors, $key: primary), base);
+    background: #f1e017;
     border: 0;
     transform: translate3d(-50%, -50%, 0);
 }

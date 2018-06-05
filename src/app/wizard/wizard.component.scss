@@ -7,6 +7,7 @@
 }
 .grs-wizard__step-container {
   cursor: pointer;
+  padding-top: 2rem;
 }
 .grs-wizard__step-icon {
   width: 2.5rem;
@@ -66,13 +67,13 @@
     }
   }
   .grs-wizard__step-icon {
-    border: 1px solid map-get(map-get($map: $colors, $key: info), base);
+    border: 2px solid #edd100;
     fill: #fff;
-    background-color: map-get(map-get($map: $colors, $key: info), base);
+    background-color: #edd100;
   }
   .grs-wizard__step-label {
-    font-weight: 400;
-    color: map-get(map-get($map: $colors, $key: info), base);
+    font-weight: 600;
+    color: #edd100;
   }
 }
 

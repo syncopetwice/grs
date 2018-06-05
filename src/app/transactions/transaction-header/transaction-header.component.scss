@@ -5,9 +5,9 @@
 
 }
 
-header {
-  border-bottom: 1px solid map-get(map-get($map: $colors, $key: info), light);
-}
+// header {
+//   border-bottom: 1px solid map-get(map-get($map: $colors, $key: info), light);
+// }
 
 .transaction-header__icon {
   fill: map-get(map-get($map: $font, $key: colors), brand);

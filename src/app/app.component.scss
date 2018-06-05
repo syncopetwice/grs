@@ -4,7 +4,7 @@
   font-family: map-get($map: $font, $key: family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
+  background-color: #383a40;
   // background-color: map-get($map: $backgrounds, $key: ground);
   min-height: 100vh;
   min-width: 100vw;

@@ -13,17 +13,7 @@
     border-radius: 0.125rem;
     box-shadow: none;
     font-weight: 600;
-    &:hover,
-    &:focus {
-        background-color: #F0F3F5;
-        color: #9493a9;
-    }
-    &:focus {
-        box-shadow: 0 0 2px darken(#F0F3F5, 2%);
-    }
-    &:active {
-        background-color: darken(#F0F3F5, 2%);
-    }
+    letter-spacing: 0.065rem;
     &[disabled] {
         background: transparent;
         color: lighten(#9493a9, 2%);
@@ -32,24 +22,16 @@
 }
 
 .grs-action_brand {
-    background: #fff;
-    border: 1px solid map-get(map-get($map: $colors, $key: primary), base);
-    color: map-get(map-get($map: $colors, $key: primary), base);
-    &:hover,
-    &:focus {
-        border: 1px solid #62E2C8;
-        text-shadow: 1px 1px 2px rgba(0,0,0,.2);
-        color: #fff;
-        background-color: #C4F4EA;
+    background-color: #5e7ef7;
+    color: #fff;
+    border-radius: 0.125rem;
+    &:hover {
+      color: #fff;
+      background-color: darken(#5e7ef7, 2%);
     }
     &:focus {
+      background-color: darken(#5e7ef7, 3%);
       box-shadow: inset 0 0 2px rgba(0,0,0,0.25);
-    }
-    &:active {
-        text-shadow: 1px 1px 2px rgba(0,0,0,.2);
-        border-color: none;
-        background-color: map-get(map-get($map: $colors, $key: primary), base);
-        box-shadow: inset 0 0 2px rgba(0,0,0,0.35);
     }
     &[disabled] {
         background: #dce4e9;
@@ -60,16 +42,15 @@
 }
 
 .grs-action_neutral {
-    border: 1px solid transparent;
-    &:hover,
-    &:focus {
-      border: 1px solid map-get(map-get($map: $colors, $key: info), lighten);
-      background-color: map-get(map-get($map: $colors, $key: info), lighten);
+    border: none;
+    &:hover {
+      background-color: transparent;
+
     }
     &:focus {
       box-shadow: none;
     }
     &:active {
-      background-color: lighten(#F0F3F5, 1%);
+
     }
 }
