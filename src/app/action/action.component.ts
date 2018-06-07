@@ -9,6 +9,7 @@ export class ActionComponent implements OnInit {
 
   @Input() type: string;
   @Input() disabled: boolean;
+  @Input() size: string;
 
   constructor() { }
 

@@ -68,15 +68,15 @@
       grs-lookup__selected-item
       ">
       <span>Salesforce Inc.</span>
-      <span
-        class="
-          slds-shrink-none
-          slds-m-left_x-small
-          grs-lookup__selected-close-icon
-          "
-          (click)="isSelectedItemVisible = false"
-        >
-      </span>
+      <grs-icon-action
+        class="slds-m-left_x-small"
+        (click)="isSelectedItemVisible = false"
+        type="close"
+        [options]="{
+          transparent: true,
+          size: 'xx-small'
+        }"
+        ></grs-icon-action>
     </div>
 
   </div>

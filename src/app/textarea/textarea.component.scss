@@ -1,13 +1,13 @@
 .grs-textarea {
     border: none;
     padding: 0.5rem 0.75rem;
-    border-radius: 0.25rem;
+    border-radius: 0.125rem;
     min-height: 3rem;
     line-height: 1.25rem;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 600;
     border: none;
-    color: #49474c;
+    color: #262b30;
     background-color: #f5f7f7;
     &:focus {
       background-color: darken(#f5f7f7, 1%);

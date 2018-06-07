@@ -38,16 +38,21 @@
   <grs-wizard-step-3 *ngIf="steps[2].state === 'active'"></grs-wizard-step-3>
 </div>
 
-<div class="slds-grid slds-grid_align-center">
+<div class="
+  slds-grid
+  slds-grid_align-center
+  slds-container_small
+  slds-container_center
+  ">
   <ng-container *ngIf="steps[0].state === 'active'">
-    <grs-action type="brand" (click)="activateAddStakeholders()">Next</grs-action>
+    <grs-action class="slds-grow" size="full" type="brand" (click)="activateAddStakeholders()">Next</grs-action>
   </ng-container>
   <ng-container *ngIf="steps[1].state === 'active'">
-    <grs-action type="neutral" (click)="activateNewProject()">Previous</grs-action>
-    <grs-action class="slds-m-left_x-small" type="brand" (click)="activateSummary()">Next</grs-action>
+    <grs-action class="slds-grow" size="full" type="neutral" (click)="activateNewProject()">Previous</grs-action>
+    <grs-action size="full" class="slds-m-left_x-small slds-grow" type="brand" (click)="activateSummary()">Next</grs-action>
   </ng-container>
   <ng-container *ngIf="steps[2].state === 'active'">
-    <grs-action type="neutral" (click)="activateAddStakeholders()">Previous</grs-action>
-    <grs-action class="slds-m-left_x-small" type="brand" (click)="completeWizard()">Complete</grs-action>
+    <grs-action class="slds-grow" size="full" type="neutral" (click)="activateAddStakeholders()">Previous</grs-action>
+    <grs-action size="full" class="slds-m-left_x-small slds-grow" type="brand" (click)="completeWizard()">Complete</grs-action>
   </ng-container>
 </div>

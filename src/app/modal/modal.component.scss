@@ -1,29 +1,35 @@
 .grs-modal {}
 
 .grs-modal__container {
-    border-radius: 0.3rem;
+    border-radius: 0.125rem;
     padding: 1rem 0;
     margin: 1rem auto;
 }
 
 .grs-modal__header {
-    padding: 0.75rem 1rem;
+    padding: 0.25rem 0.75rem;
     border-bottom: 1px solid #DFE3E9;
-    border-top-right-radius: 0.3rem;
-    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.125rem;
+    border-top-left-radius: 0.125rem;
+    text-align: left;
+    border-left: 2px solid #6283f8;
 }
 
 .grs-modal__heading {
-    font-size: 14px;
+    margin-top: 2px;
+    font-size: 12px;
+    font-weight: 400;
     text-transform: uppercase;
-    font-weight: 300;
-    color: lighten(#3e3e3c, 10%);
+    letter-spacing: 0.125rem;
+    color: #010101;
 }
 
-.grs-modal__content {}
+.grs-modal__content {
+  padding: 0.25rem 0.75rem;
+}
 
 .grs-modal__footer {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.75rem;
     background-color: #F7F8F9;
     box-shadow: none;
     border: none;

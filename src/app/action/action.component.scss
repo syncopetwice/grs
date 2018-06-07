@@ -42,15 +42,21 @@
 }
 
 .grs-action_neutral {
-    border: none;
+    border: 1px solid #5e7ef7;
+    color: #5e7ef7;
+    background-color: #fff;
     &:hover {
-      background-color: transparent;
-
+      color: #5e7ef7;
+      background-color: #fff;
     }
     &:focus {
+      color: #5e7ef7;
       box-shadow: none;
+      background-color: #fff;
     }
-    &:active {
+}
 
-    }
+.grs-action_size-full {
+  display: block;
+  width: 100%;
 }

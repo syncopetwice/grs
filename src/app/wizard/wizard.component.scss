@@ -7,7 +7,6 @@
 }
 .grs-wizard__step-container {
   cursor: pointer;
-  padding-top: 2rem;
 }
 .grs-wizard__step-icon {
   width: 2.5rem;
@@ -19,9 +18,10 @@
 }
 .grs-wizard__step-label {
   color: #bfbfbf;
-  font-size: 13px;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.065rem;
   text-transform: uppercase;
-  font-weight: 300;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -59,41 +59,37 @@
 .grs-wizard__step_is-active {
   &:not(:first-child) {
     &::before {
-      border-color: map-get(map-get($map: $colors, $key: info), base);
+      border-color: #687173;
     }
     &::after {
-      border-color: map-get(map-get($map: $colors, $key: info), base);
-      background-color: map-get(map-get($map: $colors, $key: info), base);
+      border-color: #687173;
+      background-color: #687173;
     }
   }
   .grs-wizard__step-icon {
-    border: 2px solid #edd100;
-    fill: #fff;
-    background-color: #edd100;
+    border: 1px solid #7690f8;
+    fill: #7690f8;
   }
   .grs-wizard__step-label {
-    font-weight: 600;
-    color: #edd100;
+    color: #7690f8;
   }
 }
 
 .grs-wizard__step_is-complete {
   &:not(:first-child) {
     &::before {
-      border-color: map-get(map-get($map: $colors, $key: primary), base);
+      border-color: #687173;
     }
     &::after {
-      border-color: map-get(map-get($map: $colors, $key: primary), base);
-      background-color: map-get(map-get($map: $colors, $key: primary), base);
+      border-color: #687173;
+      background-color: #687173;
     }
   }
   .grs-wizard__step-icon {
-    border: 1px solid map-get(map-get($map: $colors, $key: primary), base);
-    fill: #fff;
-    background-color: map-get(map-get($map: $colors, $key: primary), base);
+    border: 1px solid #687173;
+    fill: #687173;
   }
   .grs-wizard__step-label {
-    font-weight: 400;
-    color: map-get(map-get($map: $colors, $key: primary), base);
+    color: #687173;
   }
 }

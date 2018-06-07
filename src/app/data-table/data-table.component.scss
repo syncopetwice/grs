@@ -12,7 +12,6 @@
         font-size: 14px;
         font-family: map-get($map: $font, $key: family);
         color: map-get(map-get($map: $font, $key: colors), brand);
-        font-weight: 300;
     }
     thead {
       tr {
@@ -20,14 +19,12 @@
       }
       th {
         color: map-get(map-get($map: $font, $key: colors), brand);
-        background: transparent;
+        background: #f7f7f7;
         text-transform: uppercase;
-        font-size: 11px;
-        font-weight: 600;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
+        font-size: 12px;
+        font-weight: 700;
         border-top: none !important;
-        border-bottom: 1px solid #f1f1f1;
+        border-bottom: 1px solid darken(#f0f0f0, 5%);
       }
     }
     tbody {
@@ -37,8 +34,10 @@
           box-shadow: none !important;
           // background-color: map-get(map-get($map: $colors, $key: info), lighten);
           // border-bottom: 1px solid map-get(map-get($map: $colors, $key: info), base);
-          background-color: #fff9f5;
-          border-bottom: 1px solid darken(#fff9f5, 10%);
+
+          // border-bottom: 1px solid darken(#fff9f5, 10%);
+          // background-color: rgba(#f0f0f0, 0.15);
+          background-color: transparent;
         }
       }
       th {
@@ -47,9 +46,20 @@
       }
       td {
         border-top: none;
-        border-bottom: 1px solid transparent;
-        // padding-top: 0.5rem;
-        // padding-bottom: 0.5rem;
+        border-bottom: 1px solid #f1f1f1;
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+      }
+      tr:last-child {
+        td {
+          border-bottom: transparent;
+          border-bottom: 1px solid darken(#f0f0f0, 2%);
+        }
+      }
+      tr:nth-child(even) {
+        td {
+          background-color: lighten(#f9f9f9, 1%);
+        }
       }
     }
 }

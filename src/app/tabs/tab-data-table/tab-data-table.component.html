@@ -19,8 +19,24 @@
     </div>
   </div>
 
-  <div>
-      <grs-action type="brand">Approve</grs-action>
+  <div class="slds-grid">
+      <grs-tooltip content="Light Mode Tooltip">
+        <grs-action type="neutral">Light Tooltip</grs-action>
+      </grs-tooltip>
+      <grs-tooltip
+        content="Grey Mode Tooltip"
+        mode="grey"
+        class="slds-m-left_x-small"
+        >
+        <grs-action type="brand">Grey Tooltip</grs-action>
+      </grs-tooltip>
+      <grs-tooltip
+        content="Dark Mode Tooltip"
+        mode="dark"
+        class="slds-m-left_x-small"
+        >
+        <grs-action type="brand">Dark Tooltip</grs-action>
+      </grs-tooltip>
   </div>
 
 </div>
@@ -28,6 +44,12 @@
   <grs-data-table></grs-data-table>
 </div>
 
-<div class="slds-m-top_medium slds-grid slds-grid_align-center">
+<div
+  class="
+    slds-m-top_large
+    slds-p-top_medium
+    slds-grid
+    slds-grid_align-center
+    ">
   <grs-pagination></grs-pagination>
 </div>

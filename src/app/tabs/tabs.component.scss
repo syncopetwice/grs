@@ -1,6 +1,6 @@
 @import '~app/app.vars.scss';
 
-$color: #4ecf78;
+$color: #dce4e6;
 
 :host {
     display: block;
@@ -15,7 +15,7 @@ $color: #4ecf78;
 .grs-tabs__nav {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    // justify-content: space-between;
     padding-left: 1rem;
     padding-right: 1rem;
     margin-top: 1.5rem;
@@ -32,10 +32,11 @@ $color: #4ecf78;
   display: block;
     text-decoration: none;
     cursor: pointer;
-    line-height: 1.25rem;
+    line-height: 1.5rem;
     // border-bottom: 1px solid transparent;
-    color: #1b1e21;
+    color: #7d888a;
     font-size: 14px;
+    font-weight: 600;
 }
 
 .grs-tabs .grs-tabs__item > a:focus {
@@ -98,7 +99,7 @@ $color: #4ecf78;
 
 .grs-tabs__item.grs-active,
 .grs-tabs__item.grs-is-active {
-    color: #fff;
+    color: #1b1e21;
 }
 
 .grs-tabs__item.grs-active,
@@ -106,7 +107,7 @@ $color: #4ecf78;
   background-color: $color;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  color: #fff;
+  color: #1b1e21;
   font-weight: 600;
   position: relative;
 
@@ -132,7 +133,7 @@ $color: #4ecf78;
 
 .grs-tabs__item.grs-active .grs-tabs__link,
 .grs-tabs__item.grs-is-active .grs-tabs__link {
-    color: #fff !important;
+    color: #1b1e21 !important;
 
     position: relative;
 
@@ -208,5 +209,5 @@ $color: #4ecf78;
 
 .grs-tabs__content {
     position: relative;
-    padding: 1.5rem;
+    padding: 1rem;
 }

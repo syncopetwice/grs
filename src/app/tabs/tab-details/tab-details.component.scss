@@ -11,6 +11,14 @@
   }
 }
 
+.slds-form-element__label {
+  color: lighten(#010101, 10%);
+}
+
+.slds-form-element__static {
+  color: #010101;
+}
+
 .tab-details_col {
   border-radius: 0.125rem;
   background-color: #fff;

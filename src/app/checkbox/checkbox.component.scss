@@ -1,5 +1,7 @@
 @import '~app/app.vars.scss';
 
+$fill: #738ef8;
+
 .slds-checkbox {
     display: inline-block;
 }
@@ -61,7 +63,7 @@
     right: 2px;
     left: 2px;
     border-radius: 0.125rem;
-    background: #f1e017;
+    background: $fill;
 }
 
 .slds-checkbox [type="checkbox"]:focus+.slds-checkbox_faux,
@@ -71,8 +73,8 @@
 .slds-checkbox [type="checkbox"]:focus+.slds-checkbox__label .slds-checkbox_faux,
 .slds-checkbox [type="checkbox"]:focus+.slds-checkbox__label .slds-checkbox--faux {
     content: '';
-    border-color: #f1e017;
-    box-shadow: 0 0 3px #f1e017;
+    border-color: $fill;
+    box-shadow: 0 0 3px $fill;
 }
 
 .slds-checkbox [type="checkbox"]:focus:checked>.slds-checkbox_faux,
@@ -81,7 +83,7 @@
 .slds-checkbox [type="checkbox"]:focus:checked~.slds-checkbox--faux,
 .slds-checkbox [type="checkbox"]:focus:checked+.slds-checkbox__label .slds-checkbox_faux,
 .slds-checkbox [type="checkbox"]:focus:checked+.slds-checkbox__label .slds-checkbox--faux {
-    border-color: #f1e017;
+    border-color: $fill;
     background-color: white;
 }
 
@@ -98,7 +100,7 @@
     left: 50%;
     width: 0.5rem;
     height: 2px;
-    background: #f1e017;
+    background: $fill;
     border: 0;
     transform: translate3d(-50%, -50%, 0);
 }
@@ -157,5 +159,5 @@
 .slds-form-element .slds-checkbox [type="checkbox"]~.slds-checkbox--faux,
 .slds-form-element .slds-checkbox [type="checkbox"]+.slds-checkbox__label .slds-checkbox_faux,
 .slds-form-element .slds-checkbox [type="checkbox"]+.slds-checkbox__label .slds-checkbox--faux {
-    margin-right: 0.25rem;
+    margin-right: 0;
 }

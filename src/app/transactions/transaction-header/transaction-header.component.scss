@@ -10,11 +10,11 @@
 // }
 
 .transaction-header__icon {
-  fill: map-get(map-get($map: $font, $key: colors), brand);
+  fill: #687173;
 }
 
 .transaction-header__title {
-  color: map-get(map-get($map: $font, $key: colors), brand);
+  color: #1b1e21;
   font-size: 15px;
   text-transform: uppercase;
   span {
@@ -23,14 +23,14 @@
 }
 
 .transaction-header__subheader {
-  color: map-get(map-get($map: $font, $key: colors), subbrand);
+  color: #262b30;
   font-size: 12px;
 }
 
 .transaction-header__indicator {
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
-  border: 2px solid map-get(map-get($map: $colors, $key: info), base);
+  border: 2px solid #f72f5f;
   display: block;
 }

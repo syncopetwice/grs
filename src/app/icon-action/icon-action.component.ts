@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 
 interface Options {
   transparent?: boolean;
-  size?: 'x-small' | 'small';
+  size?:  'xx-small' | 'x-small' | 'small';
   theme?: 'dark';
 }
 
@@ -24,6 +24,7 @@ export class IconActionComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {
+  }
 
 }

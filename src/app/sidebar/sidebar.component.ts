@@ -67,50 +67,6 @@ export class SidebarComponent implements OnInit {
       {
         label: 'Purchase Orders',
         icon: 'orders'
-      },
-      {
-        label: 'Shipping',
-        icon: 'shipping'
-      },
-      {
-        label: 'Accounts',
-        icon: 'accounts'
-      },
-      {
-        label: 'Client Invoices',
-        icon: 'invoices'
-      },
-      {
-        label: 'Contacts',
-        icon: 'contacts'
-      },
-      {
-        label: 'Purchase Orders',
-        icon: 'orders'
-      },
-      {
-        label: 'Shipping',
-        icon: 'shipping'
-      },
-      {
-        label: 'Accounts',
-        icon: 'accounts'
-      },
-      {
-        label: 'Client Invoices',
-        icon: 'invoices'
-      },
-      {
-        label: 'Contacts',
-        icon: 'contacts'
-      },
-      {
-        label: 'Purchase Orders',
-        icon: 'orders'
-      },
-      {
-        label: 'Shipping',
-        icon: 'shipping'
       }
     ];
   }

@@ -17,26 +17,31 @@
     <header
       class="
       slds-modal__header
+      slds-grid
+      slds-grid_align-spread
+      slds-grid_vertical-align-center
       grs-modal__header
       ">
-      <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close">
-        <svg class="slds-button__icon slds-button__icon_large" aria-hidden="true">
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#close" />
-        </svg>
-        <span class="slds-assistive-text">Close</span>
-      </button>
-      <h2 class="
-      slds-text-heading_medium
-      slds-hyphenate
-      grs-modal__heading
-      ">
-        Agreement
+      <h2
+        class="
+        slds-text-heading_medium
+        slds-hyphenate
+        grs-modal__heading
+        ">
+        Modal Window Header
       </h2>
+      <grs-icon-action
+        (click)="open = false"
+        type="close"
+        options="{
+          size: 'x-small',
+          transparent: true
+        }"
+        ></grs-icon-action>
     </header>
     <div
       class="
         slds-modal__content
-        slds-p-around_medium
         grs-modal__content
       ">
       <ng-content></ng-content>
@@ -46,9 +51,11 @@
         slds-modal__footer
         grs-modal__footer
       ">
-      <div class="slds-grid slds-grid_align-end">
-        <grs-action type="neutral" (click)="open = false">Cancel</grs-action>
-        <grs-action class="slds-m-left_small" type="brand">Save</grs-action>
+      <div>
+        <grs-action size="full" type="default" (click)="open = false">Cancel</grs-action>
+      </div>
+      <div class="slds-m-top_xx-small">
+        <grs-action size="full" type="brand">Save</grs-action>
       </div>
     </footer>
   </div>

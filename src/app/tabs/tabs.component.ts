@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TabsComponent implements OnInit {
 
-  public currentTabId: Number = 4;
+  public currentTabId: Number = 1;
 
   tabs = [{
     id: 1,
@@ -16,10 +16,10 @@ export class TabsComponent implements OnInit {
     id: 2,
     label: 'Wizard'
   },
-  {
-    id: 3,
-    label: 'Tree View'
-  },
+  // {
+  //   id: 3,
+  //   label: 'Tree View'
+  // },
   {
     id: 4,
     label: 'Data Table'

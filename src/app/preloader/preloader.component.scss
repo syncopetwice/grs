@@ -16,16 +16,16 @@
 }
 
 .preloader {
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   position: relative;
 }
 
 .preloader__bounce-1 {
-  border: 1px solid map-get(map-get($map: $colors, $key: info), base);
+  border: 1px solid #5c7bf7;
 }
 .preloader__bounce-2 {
-  border: 1px solid map-get(map-get($map: $colors, $key: info), light);
+  border: 1px solid #5c7bf7;
 }
 
 .preloader__bounce-1,
@@ -34,7 +34,7 @@
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: map-get(map-get($map: $colors, $key: info), base);
+  background-color: #5c7bf7;
   opacity: 0.6;
   position: absolute;
   top: 0;

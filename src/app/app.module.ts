@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { SatPopoverModule } from '@ncstate/sat-popover';
+
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
@@ -39,6 +41,8 @@ import { MultiSelectComponent } from './multi-select/multi-select.component';
 import { DataTableComponent } from './data-table/data-table.component';
 import { TabDataTableComponent } from './tabs/tab-data-table/tab-data-table.component';
 import { PaginationComponent } from './pagination/pagination.component';
+import { HoverDirective } from './hover.directive';
+import { TooltipComponent } from './tooltip/tooltip.component';
 
 @NgModule({
   declarations: [
@@ -76,11 +80,14 @@ import { PaginationComponent } from './pagination/pagination.component';
     DataTableComponent,
     TabDataTableComponent,
     PaginationComponent,
+    HoverDirective,
+    TooltipComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    SatPopoverModule
   ],
   providers: [TransactionService],
   bootstrap: [AppComponent]

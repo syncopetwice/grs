@@ -1,0 +1,48 @@
+.slds-checkbox_toggle {
+
+  [type="checkbox"]:checked {
+
+    &+.slds-checkbox_faux,
+    &~.slds-checkbox_faux,
+    &+.slds-checkbox_faux_container .slds-checkbox_faux {
+       background: transparent;
+       border: 1px solid $fill;
+    }
+
+    &+.slds-checkbox_faux:hover,
+    &+.slds-checkbox_faux:focus,
+    &~.slds-checkbox_faux:hover,
+    &~.slds-checkbox_faux:focus,
+    &+.slds-checkbox_faux_container .slds-checkbox_faux:hover,
+    &+.slds-checkbox_faux_container .slds-checkbox_faux:focus {
+       // background: darken(map-get(map-get($map: $colors, $key: primary), base), 5%);
+    }
+
+    &+.slds-checkbox_faux:before,
+    &~.slds-checkbox_faux:before,
+    &+.slds-checkbox_faux_container .slds-checkbox_faux:before {
+       content: '';
+       position: absolute;
+       background-color: $fill;
+       border-radius: 15rem;
+       transition: transform 0.2s cubic-bezier(0.75, 0, 0.08, 1);
+       top: 2px;
+       right: 2px;
+       width: 16px;
+       height: 16px;
+    }
+
+    &+.slds-checkbox_faux:after,
+    &~.slds-checkbox_faux:after,
+    &+.slds-checkbox_faux_container .slds-checkbox_faux:after {
+       display: none;
+    }
+
+    &:focus+.slds-checkbox_faux,
+    &:focus~.slds-checkbox_faux,
+    &:focus+.slds-checkbox_faux_container .slds-checkbox_faux {
+       // background-color: map-get(map-get($map: $colors, $key: primary), base);
+    }
+  }
+
+}

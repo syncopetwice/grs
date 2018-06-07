@@ -10,7 +10,7 @@
     color: #49464c !important;
     &:hover,
     &:focus {
-        background-color: map-get(map-get($map: $colors, $key: primary), hoverlight);
+        background-color: rgba(#5c7bf7, 0.15);
         color: #9493a9;
     }
     &:focus {
@@ -39,6 +39,17 @@
   }
 }
 
+.grs-icon-action_xx-small {
+  width: 0.75rem;
+  height: 0.75rem;
+  .grs-icon-action__button-icon {
+    width: 0.75rem;
+    height: 0.75rem;
+    line-height: 0.5rem;
+  }
+}
+
+
 .grs-icon-action_dark {
   &:hover,
   &:focus {
@@ -60,13 +71,18 @@
 
 .grs-icon-action_transparent {
   background-color: transparent;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: transparent;
+  }
 }
 
 .grs-icon-action_case {
-  background-color: #FFD740;
+  background-color: #f1e017;
 
   &:hover,
   &:focus {
-    background-color: #FFC400;
+    background-color: #f1e017;
   }
 }

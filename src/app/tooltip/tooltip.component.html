@@ -1,0 +1,15 @@
+<div class="tooltip-container">
+  <ng-content style="-webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1.0, 1.0);
+  transform: translateZ(0);"></ng-content>
+  <div
+    class="tooltip"
+    [ngClass]="{
+      'dark' : (mode === 'dark'),
+      'grey' : (mode === 'grey'),
+      'visible' : visible
+    }"
+    >
+    {{ content }}
+  </div>
+</div>
