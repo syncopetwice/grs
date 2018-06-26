@@ -1,11 +1,18 @@
-import { TransactionService } from './transactions/transaction.service';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 import { AppRoutingModule } from './app-routing.module';
 
+import {
+  MatButtonModule,
+  MatCheckboxModule,
+  MatIconModule
+} from '@angular/material';
+
 import { AppComponent } from './app.component';
+
+import { SidebarComponent } from './sidebar/sidebar.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
 import { InputComponent } from './input/input.component';
 import { TextareaComponent } from './textarea/textarea.component';
@@ -29,7 +36,6 @@ import { TabDetailsComponent } from './tabs/tab-details/tab-details.component';
 import { TabFinishesComponent } from './tabs/tab-finishes/tab-finishes.component';
 import { TabLaborComponent } from './tabs/tab-labor/tab-labor.component';
 import { LookupComponent } from './lookup/lookup.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
 import { TreeViewComponent } from './tree-view/tree-view.component';
 import { WizardComponent } from './wizard/wizard.component';
 import { WizardStep1Component } from './wizard/wizard-step-1/wizard-step-1.component';
@@ -39,6 +45,10 @@ import { MultiSelectComponent } from './multi-select/multi-select.component';
 import { DataTableComponent } from './data-table/data-table.component';
 import { TabDataTableComponent } from './tabs/tab-data-table/tab-data-table.component';
 import { PaginationComponent } from './pagination/pagination.component';
+
+import { TransactionService } from './transactions/transaction.service';
+
+import 'hammerjs';
 
 @NgModule({
   declarations: [
@@ -66,7 +76,6 @@ import { PaginationComponent } from './pagination/pagination.component';
     TabFinishesComponent,
     TabLaborComponent,
     LookupComponent,
-    SidebarComponent,
     TreeViewComponent,
     WizardComponent,
     WizardStep1Component,
@@ -76,11 +85,15 @@ import { PaginationComponent } from './pagination/pagination.component';
     DataTableComponent,
     TabDataTableComponent,
     PaginationComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatCheckboxModule,
+    MatIconModule
   ],
   providers: [TransactionService],
   bootstrap: [AppComponent]
