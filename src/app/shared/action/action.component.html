@@ -1,0 +1,10 @@
+<button
+  class="slds-button grs-action"
+  [ngClass]="{
+    'slds-button_brand grs-action_brand' : type === 'brand',
+    'slds-button_neutral grs-action_neutral' : type === 'neutral'
+  }"
+  [disabled]="disabled"
+  >
+  <ng-content></ng-content>
+</button>

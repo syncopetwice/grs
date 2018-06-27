@@ -1,0 +1,64 @@
+<section
+  role="dialog"
+  tabindex="-1"
+  aria-modal="true"
+  class="
+    slds-modal
+    grs-modal
+    "
+  [ngClass]="{
+    'slds-slide-up-saving' : open
+  }"
+  >
+  <div class="
+    slds-modal__container
+    grs-modal__container
+    ">
+    <header
+      class="
+      slds-modal__header
+      grs-modal__header
+      ">
+      <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close">
+        <svg class="slds-button__icon slds-button__icon_large" aria-hidden="true">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#close" />
+        </svg>
+        <span class="slds-assistive-text">Close</span>
+      </button>
+      <h2 class="
+      slds-text-heading_medium
+      slds-hyphenate
+      grs-modal__heading
+      ">
+        Agreement
+      </h2>
+    </header>
+    <div
+      class="
+        slds-modal__content
+        slds-p-around_medium
+        grs-modal__content
+      ">
+      <ng-content></ng-content>
+    </div>
+    <footer
+      class="
+        slds-modal__footer
+        grs-modal__footer
+      ">
+      <div class="slds-grid slds-grid_align-end">
+        <grs-action type="neutral" (click)="open = false">Cancel</grs-action>
+        <grs-action class="slds-m-left_small" type="brand">Save</grs-action>
+      </div>
+    </footer>
+  </div>
+</section>
+<div
+  class="
+    slds-backdrop
+    grs-backdrop
+    "
+  [ngClass]="{
+    'slds-backdrop_open' :open
+    }"
+    ></div>
