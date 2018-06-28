@@ -17,16 +17,20 @@ export class InputComponent implements OnInit {
   @Output() inputBlur = new EventEmitter();
   @Output() iconClick = new EventEmitter();
 
+  isInputHasFocus: Boolean = false;
+
   constructor() {}
 
   ngOnInit() {
   }
 
   onInputFocus(): void {
+    this.isInputHasFocus = true;
     this.inputFocus.emit();
   }
 
   onInputBlur(): void {
+    this.isInputHasFocus = false;
     this.inputBlur.emit();
   }
 

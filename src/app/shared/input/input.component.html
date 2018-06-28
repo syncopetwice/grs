@@ -1,24 +1,29 @@
-<input
-  [type]="type"
-  class="slds-input grs-input"
-  [placeholder]="placeholder"
-  [disabled]="disabled"
-  (focus)="onInputFocus()"
-  (blur)="onInputBlur()"
-  [value]="value"
-  />
-
-<span
-  *ngIf="icon"
-  class="
-    slds-icon_container
-    slds-icon-utility-down
-    slds-input__icon
-    slds-input__icon_right
-    "
-    style="cursor: pointer"
+<div
+  class="input-container"
+  [ngClass]="{
+    'input-has-focus' : isInputHasFocus
+  }"
   >
-<grs-icon type="down" (click)="onIconClick()">
+  <input
+    [type]="type"
+    class="slds-input grs-input"
+    [placeholder]="placeholder"
+    [disabled]="disabled"
+    (focus)="onInputFocus()"
+    (blur)="onInputBlur()"
+    [value]="value"
+    />
 
-</grs-icon>
-</span>
+  <span
+    *ngIf="icon"
+    class="
+      slds-icon_container
+      slds-icon-utility-down
+      slds-input__icon
+      slds-input__icon_right
+      "
+      style="cursor: pointer"
+    >
+  <grs-icon type="down" (click)="onIconClick()"></grs-icon>
+  </span>
+</div>

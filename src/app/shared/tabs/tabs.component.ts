@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TabsComponent implements OnInit {
 
-  public currentTabId: Number = 4;
+  public currentTabId: Number = 2;
 
   tabs = [{
     id: 1,
