@@ -6,10 +6,9 @@ import {
   MatCheckboxModule,
   MatIconModule,
   MatPaginatorModule,
-  MatSelectModule
+  MatSelectModule,
+  MatTabsModule
 } from '@angular/material';
-
-// import { RippleDirective } from './action/ripple.directive';
 
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
@@ -54,7 +53,8 @@ import { TransactionService } from './transactions/transaction.service';
     MatCheckboxModule,
     MatIconModule,
     MatPaginatorModule,
-    MatSelectModule
+    MatSelectModule,
+    MatTabsModule
   ],
   declarations: [
     CheckboxComponent,
@@ -90,7 +90,6 @@ import { TransactionService } from './transactions/transaction.service';
     TabDataTableComponent,
     PaginationComponent,
     SidebarComponent,
-    // RippleDirective
   ],
   exports: [
     CheckboxComponent,
@@ -126,7 +125,6 @@ import { TransactionService } from './transactions/transaction.service';
     TabDataTableComponent,
     PaginationComponent,
     SidebarComponent,
-    // RippleDirective
   ],
   providers: [
     TransactionService

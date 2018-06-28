@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostBinding } from '@angular/core';
 
 @Component({
   selector: 'grs-textarea',
@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TextareaComponent implements OnInit {
 
+  @HostBinding('class.focused') focused: Boolean = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onFocus() {
+    this.focused = true;
+  }
+  onBlur() {
+    this.focused = false;
   }
 
 }

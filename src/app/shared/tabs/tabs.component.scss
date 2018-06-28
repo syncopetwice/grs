@@ -202,3 +202,68 @@
     padding: 1rem;
     margin-top: 0.125rem;
 }
+
+
+
+// Material Tabs
+
+:host /deep/ {
+
+  .mat-tab-header {
+    border-bottom-color: transparent;
+  }
+
+  .mat-tab-body.mat-tab-body-active {
+    overflow: visible;
+  }
+  .mat-tab-body-content {
+    padding-top: 12px;
+    overflow: visible;
+  }
+  .mat-tab-label {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 16px;
+    padding-right: 16px;
+    height: auto;
+    text-transform: uppercase;
+    color: #49464c;
+    font-size: 12px;
+    min-width: auto;
+    opacity: 1;
+
+    + .mat-tab-label {
+      border-left: 1px solid #ffb28e;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      transition: all 0.2s ease-in-out;
+    }
+
+    &.mat-tab-label-active {
+      &::after {
+        display: none;
+      }
+    }
+  }
+  .mat-tab-list {
+    .mat-ink-bar {
+      background-color: #ffb28e;
+    }
+  }
+
+  .mat-tab-group.mat-primary .mat-tab-label:not(.mat-tab-disabled):focus,
+  .mat-tab-group.mat-primary .mat-tab-link:not(.mat-tab-disabled):focus,
+  .mat-tab-nav-bar.mat-primary .mat-tab-label:not(.mat-tab-disabled):focus,
+  .mat-tab-nav-bar.mat-primary .mat-tab-link:not(.mat-tab-disabled):focus {
+    background-color: rgba(#ffb28e, 0.05);
+  }
+
+}

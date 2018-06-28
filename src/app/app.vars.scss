@@ -39,3 +39,31 @@ $font: (
     subbrand: #302d32
   )
 ) !default;
+
+
+@mixin underline-animation(){
+  & {
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 1px;
+      width: 100%;
+      background-color: #16d9b5;
+      opacity: 0;
+      transform-origin: 50%;
+      transform: scaleX(.5);
+      transition-property: transform, opacity;
+      transition-duration: .35s;
+      transition-timing-function: cubic-bezier(.55,0,.55,.2)
+    }
+    &.focused {
+      &::after {
+        opacity: 1;
+        transform: scaleX(1);
+      }
+    }
+  }
+}

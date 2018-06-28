@@ -7,43 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TabsComponent implements OnInit {
 
-  public currentTabId: Number = 2;
+  constructor() {}
 
-  tabs = [{
-    id: 1,
-    label: 'Details'
-  }, {
-    id: 2,
-    label: 'Wizard'
-  },
-  {
-    id: 3,
-    label: 'Tree View'
-  },
-  {
-    id: 4,
-    label: 'Data Table'
-  },
-  {
-    id: 5,
-    label: 'Adjustments'
-  },
-  {
-    id: 6,
-    label: 'Purchase Orders'
-  }
-];
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-  setTab(id:number) {
-    this.currentTabId = id;
-  }
-
-
-
+  ngOnInit() {}
 
 }

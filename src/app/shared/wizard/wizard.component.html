@@ -33,9 +33,19 @@
 </nav>
 
 <div class="slds-container_small slds-container_center slds-m-bottom_medium slds-m-top_large slds-p-top_large">
-  <grs-wizard-step-1 *ngIf="steps[0].state === 'active'"></grs-wizard-step-1>
-  <grs-wizard-step-2 *ngIf="steps[1].state === 'active'"></grs-wizard-step-2>
-  <grs-wizard-step-3 *ngIf="steps[2].state === 'active'"></grs-wizard-step-3>
+
+  <grs-wizard-step-1
+    *ngIf="steps[0].state === 'active'"
+    ></grs-wizard-step-1>
+
+  <grs-wizard-step-2
+    *ngIf="steps[1].state === 'active'"
+    ></grs-wizard-step-2>
+
+  <grs-wizard-step-3
+    *ngIf="steps[2].state === 'active'"
+    ></grs-wizard-step-3>
+
 </div>
 
 <div class="slds-grid slds-grid_align-center">

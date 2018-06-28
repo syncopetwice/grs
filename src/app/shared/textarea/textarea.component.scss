@@ -1,4 +1,12 @@
+@import '~app/app.vars.scss';
+
+:host {
+  display: block;
+  @include underline-animation;
+}
+
 .grs-textarea {
+    display: block;
     border: none;
     padding: 0.5rem 0.75rem;
     border-radius: 0.25rem;
@@ -9,7 +17,13 @@
     border: none;
     color: #49474c;
     background-color: #f5f7f7;
+    transition-property: box-shadow, background, border-bottom-left-radius, border-bottom-right-radius;
+    transition-duration: .3s;
+    transition-timing-function: cubic-bezier(.55,0,.55,.2);
+    &:active,
     &:focus {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
       background-color: darken(#f5f7f7, 1%);
       box-shadow: inset 0 0 3px rgba(0,0,0,0.05);
     }

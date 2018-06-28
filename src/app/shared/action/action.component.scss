@@ -75,7 +75,16 @@
 }
 
 
-.material-action {
-  line-height: 28px;
-  text-transform: uppercase;
+:host /deep/ {
+  .action {
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1.875rem;
+    color: #9493a9;
+    &.brand {
+      background-color: #fff;
+      border: 1px solid map-get(map-get($map: $colors, $key: primary), base);
+      color: map-get(map-get($map: $colors, $key: primary), base);
+    }
+  }
 }

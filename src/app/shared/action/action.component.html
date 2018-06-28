@@ -1,19 +1,11 @@
 <button
-  class="slds-button grs-action"
-  [ngClass]="{
-    'slds-button_brand grs-action_brand' : type === 'brand',
-    'slds-button_neutral grs-action_neutral' : type === 'neutral'
-  }"
-  [disabled]="disabled"
-  >
-  <ng-content></ng-content>
-</button>
-
-<!-- <button
   mat-raised-button
-  class="material-action"
+  class="action"
   [disabled]="disabled"
+  [ngClass]="{
+    'brand' : type === 'brand'
+  }"
   [color]="type === 'brand' ? 'primary' : ''"
   >
   <ng-content></ng-content>
-</button> -->
+</button>

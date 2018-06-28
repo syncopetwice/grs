@@ -1,4 +1,11 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  Input,
+  Output,
+  EventEmitter,
+  HostBinding
+} from '@angular/core';
 
 @Component({
   selector: 'grs-input',
@@ -17,7 +24,7 @@ export class InputComponent implements OnInit {
   @Output() inputBlur = new EventEmitter();
   @Output() iconClick = new EventEmitter();
 
-  isInputHasFocus: Boolean = false;
+  @HostBinding('class.focused') focused: Boolean = false;
 
   constructor() {}
 
@@ -25,17 +32,16 @@ export class InputComponent implements OnInit {
   }
 
   onInputFocus(): void {
-    this.isInputHasFocus = true;
+    this.focused = true;
     this.inputFocus.emit();
   }
 
   onInputBlur(): void {
-    this.isInputHasFocus = false;
+    this.focused = false;
     this.inputBlur.emit();
   }
 
   onIconClick(): void {
-    console.log('on icon click');
     this.iconClick.emit();
   }
 

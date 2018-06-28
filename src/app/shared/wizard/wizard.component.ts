@@ -3,8 +3,9 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'grs-wizard',
   templateUrl: './wizard.component.html',
-  styleUrls: ['./wizard.component.scss']
+  styleUrls: ['./wizard.component.scss'],
 })
+
 export class WizardComponent implements OnInit {
 
   steps = [];
