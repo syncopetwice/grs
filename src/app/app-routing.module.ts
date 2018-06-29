@@ -1,5 +1,5 @@
-import { ElementsComponent } from './shared/elements/elements.component';
-import { TransactionsComponent } from './shared/transactions/transactions.component';
+import { ElementsComponent } from './elements/elements.component';
+import { TransactionsComponent } from './transactions/transactions.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 

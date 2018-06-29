@@ -1,24 +1,25 @@
-<div class="grs">
-  <div class="grs-container">
-
-    <nav class="slds-m-bottom_small slds-hide">
-      <a
-        routerLink="/transactions"
-        routerLinkActive="slds-button_brand"
-        class="slds-button slds-button_neutral"
-        >
-        Transactions
-      </a>
-      <a
-        routerLink="/elements"
-        routerLinkActive="slds-button_brand"
-        class="slds-button slds-button_neutral"
-        >
-        Elements
-      </a>
-    </nav>
+<mat-sidenav-container>
+  <mat-sidenav
+    #sidenav
+    mode="push"
+    [(opened)]="isSidebarOpened"
+    >
     <grs-sidebar></grs-sidebar>
-    <router-outlet></router-outlet>
-  </div>
-</div>
-
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="grs">
+      <div class="grs-container">
+        <button
+          mat-icon-button
+          class="menu-button"
+          (click)="isSidebarOpened = !isSidebarOpened"
+          >
+          <mat-icon>menu</mat-icon>
+        </button>
+        <div class="slds-p-horizontal_small">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

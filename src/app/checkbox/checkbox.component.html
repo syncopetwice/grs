@@ -1,4 +1,4 @@
-<div class="slds-form-element">
+<!-- <div class="slds-form-element">
   <div class="slds-form-element__control">
     <span class="slds-checkbox">
       <input type="checkbox" [disabled]="disabled" [checked]="checked" />
@@ -8,4 +8,11 @@
       </label>
     </span>
   </div>
-</div>
+</div> -->
+
+<mat-checkbox
+  [disabled]="disabled"
+  [(ngModel)]="checked"
+  >
+  {{label}}
+</mat-checkbox>

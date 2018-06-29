@@ -1,22 +1,9 @@
-<grs-icon-action
-  [type]="isSidebarOpen ? 'left' : 'right'"
-  straight="true"
-  [options]="{
-    size: 'small',
-    theme: 'dark',
-    transparent: true
-  }"
-  (click)="isSidebarOpen = !isSidebarOpen"
-  ></grs-icon-action>
-
 <div
   class="
     slds-grid
     slds-grid_vertical
     grs-sidebar
     "
-  *ngIf="isSidebarOpen"
-  [@flyInOut]="'in'"
   >
   <header
     class="

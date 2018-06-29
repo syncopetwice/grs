@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { TransactionService } from './transaction.service';
 
 @Component({
   selector: 'grs-transactions',
