@@ -127,11 +127,8 @@
 :host /deep/ {
     .mat-slide-toggle {
         &.mat-primary {
-
-
             border-radius: 15rem;
             height: 25px;
-
             .mat-slide-toggle-bar {
                 border: 1px solid map-get(map-get($map: $colors, $key: primary), base);
                 background-color: #DBF8F3;
@@ -139,11 +136,9 @@
                 height: 25px;
                 border-radius: 15rem;
             }
-
             .mat-slide-toggle-thumb {
-              border: 1px solid #16d9b5;
+                border: 1px solid #16d9b5;
             }
-
             &.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
                 border: 1px solid #16d9b5;
                 background-color: #fff;
@@ -154,10 +149,20 @@
                 }
             }
             .mat-slide-toggle-thumb-container {
-              top: 1px;
-              left: 2px;
+                top: 1px;
+                left: 2px;
             }
-
+            &.mat-disabled {
+                .mat-slide-toggle-bar {
+                    border: darken(#e5ebef, 3%);
+                    background-color: lighten(#E5EBEF, 5%);
+                }
+                .mat-slide-toggle-thumb {
+                    background-color: darken(#e5ebef, 3%);
+                    opacity: 0.45;
+                    border-color: #e5ebef;
+                }
+            }
         }
     }
 }
