@@ -1,11 +1,6 @@
-<label
-  class="slds-checkbox_toggle slds-grid"
-  [ngClass]="{
-    'is-static' : static
-  }"
+<mat-slide-toggle
+  color="primary"
+  [checked]="checked"
+  [disabled]="disabled"
   >
-  <input type="checkbox" name="checkbox" [disabled]="disabled" [checked]="checked" />
-  <span class="slds-checkbox_faux_container" aria-live="assertive">
-    <span class="slds-checkbox_faux"></span>
-  </span>
-</label>
+</mat-slide-toggle>

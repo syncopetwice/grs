@@ -54,7 +54,8 @@ import {
   MatListModule,
   MatNativeDateModule,
   MatDatepickerModule,
-  MatInputModule
+  MatInputModule,
+  MatSlideToggleModule
 } from '@angular/material';
 
 import {MAT_MOMENT_DATE_FORMATS, MomentDateAdapter} from '@angular/material-moment-adapter';
@@ -116,7 +117,8 @@ import 'hammerjs';
     MatListModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatInputModule
+    MatInputModule,
+    MatSlideToggleModule
   ],
   providers: [
     TransactionService,
