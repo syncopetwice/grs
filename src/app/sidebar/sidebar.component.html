@@ -1,18 +1,15 @@
-<div
-  class="
+<div class="
     slds-grid
     slds-grid_vertical
+    slds-p-top_large
     grs-sidebar
-    "
-  >
-  <header
-    class="
+    ">
+  <header class="
       slds-p-vertical_small
       slds-p-horizontal_small
       slds-shrink-none
       grs-sidebar__header
-      "
-    >
+      ">
 
   </header>
   <section class="
@@ -21,7 +18,17 @@
     slds-scrollable_y
     grs-sidebar__body
     ">
-    <ul>
+
+    <mat-list>
+      <h3 mat-subheader>Pages</h3>
+      <mat-list-item *ngFor="let item of list">
+        <mat-icon mat-list-icon>folder</mat-icon>
+        <h4 mat-line>{{item.label}}</h4>
+      </mat-list-item>
+    </mat-list>
+
+
+    <!-- <ul>
       <li
         *ngFor="let item of list"
         class="
@@ -41,19 +48,6 @@
         </div>
         {{item.label}}
       </li>
-    </ul>
+    </ul> -->
   </section>
-  <!-- <footer
-    class="
-      slds-shrink-none
-      slds-p-vertical_small
-      slds-p-horizontal_x-small
-      slds-grid
-      slds-grid_align-end
-      grs-sidebar__footer
-      "
-      >
-    <grs-action type="neutral">Cancel</grs-action>
-    <grs-action type="brand" class="slds-m-left_x-small">Save</grs-action>
-  </footer> -->
 </div>

@@ -12,9 +12,9 @@ export class WizardStep1Component implements OnInit {
 
   constructor() { }
 
-  @HostBinding('@fadeInOut') get fadeInOut() {
-    return true
-  }
+  // @HostBinding('@fadeInOut') get fadeInOut() {
+  //   return true
+  // }
 
   ngOnInit() {
   }
