@@ -4,6 +4,7 @@
     display: block;
 }
 
+
 .grs-action {
     text-transform: uppercase;
     font-size: 12px;
@@ -29,6 +30,7 @@
         color: lighten(#9493a9, 2%);
         opacity: 0.45;
     }
+
 }
 
 .grs-action_brand {
@@ -76,6 +78,11 @@
 
 
 :host /deep/ {
+
+  .mat-raised-button.mat-primary .mat-ripple-element {
+    background-color: rgba(#344697, 0.25);
+  }
+
   .action {
     text-transform: uppercase;
     font-weight: 600;

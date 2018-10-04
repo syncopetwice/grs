@@ -37,8 +37,10 @@
           box-shadow: none !important;
           // background-color: map-get(map-get($map: $colors, $key: info), lighten);
           // border-bottom: 1px solid map-get(map-get($map: $colors, $key: info), base);
-          background-color: #fff9f5;
-          border-bottom: 1px solid darken(#fff9f5, 10%);
+          // background-color: #fff9f5;
+          // border-bottom: 1px solid darken(#fff9f5, 10%);
+          background-color: lighten(#344697, 55%);
+          border-bottom-color: #344697;
         }
       }
       th {
