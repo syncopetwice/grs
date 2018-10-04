@@ -80,7 +80,7 @@
 :host /deep/ {
 
   .mat-raised-button.mat-primary .mat-ripple-element {
-    background-color: rgba(#344697, 0.25);
+    background-color: rgba(map-get(map-get($map: $colors, $key: primary), base), 0.25);
   }
 
   .action {

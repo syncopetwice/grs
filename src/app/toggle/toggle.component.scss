@@ -131,21 +131,21 @@
             height: 25px;
             .mat-slide-toggle-bar {
                 border: 1px solid map-get(map-get($map: $colors, $key: primary), base);
-                background-color: #344697;
+                background-color: map-get(map-get($map: $colors, $key: primary), base);
                 width: 42px;
                 height: 25px;
                 border-radius: 15rem;
             }
             .mat-slide-toggle-thumb {
-                border: 1px solid #344697;
+                border: 1px solid map-get(map-get($map: $colors, $key: primary), base);
             }
             &.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
-                border: 1px solid #344697;
+                border: 1px solid map-get(map-get($map: $colors, $key: primary), base);
                 background-color: #fff;
             }
             &.mat-checked:not(.mat-disabled) {
                 .mat-slide-toggle-thumb {
-                    background-color: #344697;
+                    background-color: map-get(map-get($map: $colors, $key: primary), base);
                 }
             }
             .mat-slide-toggle-thumb-container {

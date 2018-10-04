@@ -256,7 +256,7 @@
   }
   .mat-tab-list {
     .mat-ink-bar {
-      background-color: #ffb28e;
+      background-color: map-get(map-get($map: $colors, $key: info), base) !important;
     }
   }
 
